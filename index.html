@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<div class="posts">
+  {% for post in paginator.posts %}
+  <div class="post">
+    <h1>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </h1>
+    <span class="post-date">
+    <img class="img-icon" src="/public/site_images/iconmonstr-calendar-5-icon.svg"></img>{{ post.date | date_to_string }}
+    <img class="img-icon" src="/public/site_images/iconmonstr-user-icon.svg"></img>{{ post.author }}
+    <img class="img-icon" src="/public/site_images/iconmonstr-tags-3-icon.svg"></img>{% for categories in post.categories %} {{ categories }} {% if forloop.last != true %} {% endif %} {% endfor %}
+    <img class="img-icon" src="/public/site_images/iconmonstr-speech-bubble-14-icon.svg"></img><a href="{{ site.url }}{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.url }}"></a>
+    <img class="img-icon" src="/public/site_images/iconmonstr-twitter-icon.svg"><a href="https://twitter.com/share?url={{ site.url | uri_escape }}{{ post.url | uri_escape }}&text={{ post.title }}" target="_blank">Tweet this!</a>
+</span>
+
+
+      {{ post.content | split: '<!-- more -->' | first }}
+      <HR>
+  </div>
+  {% endfor %}
+</div>
+
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a href="/page{{paginator.next_page}}" class="older">Older</a>
+  {% else %}
+    <span class="next">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a href="/" class="newer">Newer</a>
+    {% else %}
+      <a href="/page{{paginator.previous_page}}" class="newer">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="previous">Newer</span>
+  {% endif %}
+</div>

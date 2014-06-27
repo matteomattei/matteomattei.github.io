@@ -1,0 +1,31 @@
+---
+title: Very simple graphical messagebox in Python useful for console applications with py2exe
+author: Matteo Mattei
+layout: post
+permalink: /very-simple-graphical-messagebox-in-python-useful-for-console-applications-with-py2exe/
+categories:
+  - Python
+  - py2exe
+  - Tk
+---
+When I have to develop background console applications in Python that have to be executed in Windows, I usually use py2exe and Inno Setup for creating installer. However the big issue is always how to report and show errors to the users. My preferred solution is to keep the application as a pure console application (no graphical), set the py2exe application as a window application and handle the errors with graphical messagebox.
+
+And since the Tk library is included in the Python standard library, it is worth using it.
+
+```
+import sys
+
+if sys.version_info > (3,0):
+        import Tkinter as tkinter
+        import tkMessageBox as mbox
+else:
+        import tkinter
+        import tkinter.messagebox as mbox
+
+window = tkinter.Tk()
+window.wm_withdraw()
+mbox.showinfo('my app','my message')
+```
+
+Lines 10 and 11 are needed to don't show the main Tk window in background.  
+Updated with support for both python 2.7 and python 3.x

@@ -1,0 +1,14 @@
+# Site settings
+title: '<p>Matteo</p><p>Mattei</p>'
+tagline: 'Matteo Mattei'
+description: "Hello, my name is Matteo Mattei and this is my website. I work as Linux system administrator and web software developer. I am expert in Linux internals and my preferred languages and technologies are PHP, Python, Bash, HTML, HTML5, CSS3, jQuery, MySQL, Node.js, MongoDB, etc..."
+url: "http://matteomattei.github.io"
+version: 1.1.1
+author:
+  name: Matteo Mattei
+  email: info@matteomattei.com
+# Build settings
+markdown: rdiscount
+permalink: pretty
+highlighter: pygments
+paginate: 6
