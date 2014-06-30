@@ -4,9 +4,8 @@ author: Matteo Mattei
 layout: post
 permalink: /install-imagemagick-with-php-imagick-extension-on-centos/
 categories:
-  - Linux
-  - PHP
-tags:
+  - linux
+  - php
   - centos
   - imagick
 ---

@@ -4,10 +4,9 @@ author: Matteo Mattei
 layout: post
 permalink: /backup-restore-ldap-database/
 categories:
-  - Linux
-tags:
+  - linux
   - backup
-  - LDAP
+  - ldap
 ---
 The today question is: *did you ever happened to make an hot backup of an LDAP database?* I will show you how to do it creating an **LDIF** file and then doing the respective restore (in the hope you will not really need it). After all it is quite simple...
 

@@ -4,10 +4,9 @@ author: Matteo Mattei
 layout: post
 permalink: /script-to-remove-trailing-tilde-from-temporary-files/
 categories:
-  - Bash
-  - Linux
-tags:
-  - Tricks
+  - bash
+  - linux
+  - tricks
 ---
 Using kate as similar text editors, temporary files that have been saved present an annoying trailing tilde that I personally consider useless. I am used to be careful when I edit a file, so I don't need the *backups*. For this reason I developed this mini script in bash to remove temporary files from a folder.
 

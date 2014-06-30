@@ -4,10 +4,9 @@ author: Matteo Mattei
 layout: post
 permalink: /disk-replace-in-linux-raid-software/
 categories:
-  - Bash
-  - Linux
-tags:
-  - RAID
+  - bash
+  - linux
+  - raid
 ---
 Sometimes it happens that, after a long time of usage, one disk is going to be damage and starts to give some troubles... What's happened when the disk is part of a software raid? If the failing disk is only one, all data are safe but you have to replace the disk as soon as possible in order to avoid very ugly surprises! I know that is always a very frustrating thing to change a disk from a raid software.
 

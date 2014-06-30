@@ -4,11 +4,10 @@ author: Matteo Mattei
 layout: post
 permalink: /script-to-remove-svn-directories-from-a-project/
 categories:
-  - Bash
-  - Linux
-  - SVN
-tags:
-  - Tricks
+  - bash
+  - linux
+  - svn
+  - tricks
 ---
 When you want to distribute your own sources without any .svn directories is sufficient to create an export of the project with this command:  
 

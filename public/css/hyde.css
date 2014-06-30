@@ -278,7 +278,7 @@ a:focus {
   margin-top: 0;
   font-family: "Abril Fatface";
 }
-.masthead h1 p::first-letter {
+.masthead h1 span {
   font-weight: bold;
   color: red;
 }

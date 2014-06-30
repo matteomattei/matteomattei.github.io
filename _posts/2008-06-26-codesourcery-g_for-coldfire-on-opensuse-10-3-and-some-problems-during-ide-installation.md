@@ -4,10 +4,9 @@ author: Matteo Mattei
 layout: post
 permalink: /codesourcery-g_for-coldfire-on-opensuse-10-3-and-some-problems-during-ide-installation/
 categories:
-  - Embedded
-  - Linux
-tags:
-  - OpenSuse
+  - embedded
+  - linux
+  - opensuse
 ---
 In these days at work we are evaluating to buy a cross-compiler IDE of ColdFire developed by CodeSourcery G++. The development environment is substantially Eclipse optimized for that cross-compiler. During installation of the package we have discovered a lot of problems running the IDE installation and the next license installation.
 

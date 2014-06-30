@@ -4,9 +4,8 @@ author: Matteo Mattei
 layout: post
 permalink: /install-yum-and-php-pear-on-centos-5/
 categories:
-  - Linux
-  - PHP
-tags:
+  - linux
+  - php 
   - centos
 ---
 Virtual server like Aruba virtual servers are configured with Centos without yum and without php-pear. Today I have done an assistance to a server of my customer that needed pear installation. It is quite simple to make all work but I don't understand why Aruba's staff have not decided to include yum in their own default configuration server...

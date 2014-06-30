@@ -4,10 +4,9 @@ author: Matteo Mattei
 layout: post
 permalink: /how-to-use-the-european-healt-card-on-archlinux/
 categories:
-  - Linux
-tags:
-  - Archlinux
-  - USB
+  - linux
+  - archlinux
+  - usb
 ---
 Since some months the regions are sending the new electronic healt card to the house of the people. These cards are featured with a **microchip**. The goal to these cards is the same of the previous ones with in addition the possibility to be read by a smart card reader and store, if you want, your *electronic healt records*. 
 

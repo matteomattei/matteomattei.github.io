@@ -1,5 +1,6 @@
 ---
 title: How to resolve the audio distortion in Skype on Ubuntu 13.04 and previous versions
+description: A simple trick to solve audio problems with Skype on Ubuntu
 author: Matteo Mattei
 layout: post
 permalink: /how-to-resolve-the-audio-distortion-in-skype-on-ubuntu-13-04-and-previous-versions/

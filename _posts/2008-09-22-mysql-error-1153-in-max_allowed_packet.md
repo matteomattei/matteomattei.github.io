@@ -4,10 +4,9 @@ author: Matteo Mattei
 layout: post
 permalink: /mysql-error-1153-in-max_allowed_packet/
 categories:
-  - Linux
-  - MySQL
-tags:
-  - Tricks
+  - linux
+  - mysql
+  - tricks
 ---
 Today I have got an anomalous error during a database import on mysql:
 

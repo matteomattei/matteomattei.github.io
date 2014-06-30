@@ -4,10 +4,9 @@ author: Matteo Mattei
 layout: post
 permalink: /how-to-transfer-an-entire-big-website-via-ftp-with-recursive-lftp/
 categories:
-  - Linux
-tags:
+  - linux
   - ftp
-  - Tricks
+  - tricks
 ---
 In these days I have to transfer some big websites from a server to another and the only way to do it was an FTP connection because the destination server did not provide any other type of access. Because of the number of files was big (about 12GB) I have created a little script to use with **lftp** opened into a **screen session** to don't busy the terminal *for days*.
 

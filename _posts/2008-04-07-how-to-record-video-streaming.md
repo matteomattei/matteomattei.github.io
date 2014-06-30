@@ -4,9 +4,8 @@ author: Matteo Mattei
 layout: post
 permalink: /how-to-record-video-streaming/
 categories:
-  - Linux
-  - Multimedia
-tags:
+  - linux
+  - multimedia
   - mplayer
   - streaming
 ---
