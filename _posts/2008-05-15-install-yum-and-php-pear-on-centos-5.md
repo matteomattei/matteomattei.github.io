@@ -1,5 +1,6 @@
 ---
 title: Install yum and php-pear on Centos 5
+description: A simple guide to install yum package manager and php-pear on Linux CentOS
 author: Matteo Mattei
 layout: post
 permalink: /install-yum-and-php-pear-on-centos-5/

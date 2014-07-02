@@ -1,5 +1,6 @@
 ---
 title: Very simple graphical messagebox in Python useful for console applications with py2exe
+description: If you have to develop text-only python script and bundle them in self-contained executables, it is often useful to have the support for simple graphical message box. This guide shows how to do it with the built-in Tk library.
 author: Matteo Mattei
 layout: post
 permalink: /very-simple-graphical-messagebox-in-python-useful-for-console-applications-with-py2exe/

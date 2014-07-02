@@ -1,5 +1,6 @@
 ---
 title: How to use the european healt card on Archlinux
+description: A guide on how to configure and use the European Healt Card on ArchLinux
 author: Matteo Mattei
 layout: post
 permalink: /how-to-use-the-european-healt-card-on-archlinux/

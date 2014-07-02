@@ -1,5 +1,6 @@
 ---
 title: How to use google apps in WordPress on Bluehost
+description: A quick tutorial for configuring your Wordpress blog in Bluehost to use Google Apps and related email services
 author: Matteo Mattei
 layout: post
 permalink: /how-to-use-google-apps-in-wordpress-on-bluehost/

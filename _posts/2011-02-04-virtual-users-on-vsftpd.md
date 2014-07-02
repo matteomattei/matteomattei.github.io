@@ -1,5 +1,6 @@
 ---
 title: Virtual users on vsftpd
+description: A guide to configure Vsftpd on Linux for virtual users and separated chroot directories
 author: Matteo Mattei
 layout: post
 permalink: /virtual-users-on-vsftpd/

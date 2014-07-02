@@ -1,5 +1,6 @@
 ---
 title: How to implement MAC_X919 algorithm in Python
+description: Implementation of MAC_X919 algorithm in Phyhon
 author: Matteo Mattei
 layout: post
 permalink: /how-to-implement-mac_x919-algorithm-in-python/

@@ -1,5 +1,6 @@
 ---
 title: Export MySQL table in CSV format using PHP
+description: In this article I report a little PHP script to export a MySQL table in CSV format
 author: Matteo Mattei
 layout: post
 permalink: /export-mysql-table-in-csv-format-using-php/

@@ -1,5 +1,6 @@
 ---
 title: Speed-up your virtual machine created with VMware Player
+description: A simple guide that can change your experience with VMware player drastically improving the VM performance
 author: Matteo Mattei
 layout: post
 permalink: /speed-up-your-virtual-machine-created-with-vmware-player/

@@ -1,5 +1,6 @@
 ---
 title: How to transfer an entire website via ftp with recursive lftp
+description: This article shows how to perform a FTP transfer of an entire website from server to server using command line
 author: Matteo Mattei
 layout: post
 permalink: /how-to-transfer-an-entire-big-website-via-ftp-with-recursive-lftp/

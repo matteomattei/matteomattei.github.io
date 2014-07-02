@@ -1,5 +1,6 @@
 ---
 title: How to log email sent from PHP through mail() function
+description: In a LAMP environment is it often useful to log from where virtual host the email are sent. The script contained in this article shows how to do it.
 author: Matteo Mattei
 layout: post
 permalink: /how-to-log-email-sent-from-php-through-mail-function/

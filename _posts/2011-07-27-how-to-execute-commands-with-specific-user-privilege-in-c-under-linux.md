@@ -1,5 +1,6 @@
 ---
 title: How to execute commands with specific user privilege in C and Python under Linux
+description: Two code snippets (in C and Python) to run an executable with a different user/group in Linux
 author: Matteo Mattei
 layout: post
 permalink: /how-to-execute-commands-with-specific-user-privilege-in-c-under-linux/

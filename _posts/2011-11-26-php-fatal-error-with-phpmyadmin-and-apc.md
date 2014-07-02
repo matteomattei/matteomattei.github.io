@@ -1,5 +1,6 @@
 ---
 title: PHP Fatal error with PhpMyAdmin and APC
+description: If PhpMyAdmin and APC go in conflict, you need to modify your PHP configuration to disable APC from PhpMyAdmin
 author: Matteo Mattei
 layout: post
 permalink: /php-fatal-error-with-phpmyadmin-and-apc/

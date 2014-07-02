@@ -1,5 +1,6 @@
 ---
 title: Subversion, webdav, LDAP and folder restrictions
+description: A guide on how to configure subversion with webdav, LDAP users and folder restrictions under Linux
 author: Matteo Mattei
 layout: post
 permalink: /subversion-webdav-ldap-and-folder-restrictions/

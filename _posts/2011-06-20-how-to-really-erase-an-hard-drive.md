@@ -1,5 +1,6 @@
 ---
 title: How to really erase an Hard Drive
+description: This is a joke but you can use an hammer anyway ;-)
 author: Matteo Mattei
 layout: post
 permalink: /how-to-really-erase-an-hard-drive/

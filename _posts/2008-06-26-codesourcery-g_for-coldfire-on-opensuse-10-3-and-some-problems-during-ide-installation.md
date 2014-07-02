@@ -1,5 +1,6 @@
 ---
 title: Codesourcery G++ for ColdFire on OpenSuse 10.3 and some problems during IDE installation
+description: If you have problems running CodeSourcery G++ compiler for ColdFire on OpenSuse, this article explains how to solve them
 author: Matteo Mattei
 layout: post
 permalink: /codesourcery-g_for-coldfire-on-opensuse-10-3-and-some-problems-during-ide-installation/

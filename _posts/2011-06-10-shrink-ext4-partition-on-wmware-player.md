@@ -1,5 +1,6 @@
 ---
 title: Shrink Ext4 partition on VMware player
+description: A guide for shrinking VMware images that have EXT4 partitions
 author: Matteo Mattei
 layout: post
 permalink: /shrink-ext4-partition-on-wmware-player/

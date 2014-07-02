@@ -1,5 +1,6 @@
 ---
 title: MySQL error 1153 in max_allowed_packet
+description: How to solve MySQL error 1153 regarding max_allowed_packet
 author: Matteo Mattei
 layout: post
 permalink: /mysql-error-1153-in-max_allowed_packet/

@@ -1,5 +1,6 @@
 ---
 title: OpenSuse 10.3 CD and DVD with fault installer? Reinstalling the bootloader!
+description: A guide on how to reinstall grub bootloader in Linux OpensSuse
 author: Matteo Mattei
 layout: post
 permalink: /opensuse-10-3-cd-and-dvd-with-fault-installer-reinstall-the-bootloade/

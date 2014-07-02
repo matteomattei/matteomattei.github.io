@@ -1,5 +1,6 @@
 ---
 title: Disk replace in Linux raid software
+description: A simple guide on how to replace a broken disk that is part of a software RAID in Linux
 author: Matteo Mattei
 layout: post
 permalink: /disk-replace-in-linux-raid-software/

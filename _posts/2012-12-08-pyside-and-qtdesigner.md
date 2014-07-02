@@ -1,5 +1,6 @@
 ---
 title: PySide and Qt-designer
+description: Simple snippet of Python code and instructions on how to join generated QtDesigner GUI and your PySide code.
 author: Matteo Mattei
 layout: post
 permalink: /pyside-and-qtdesigner/

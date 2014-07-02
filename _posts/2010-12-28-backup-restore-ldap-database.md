@@ -1,5 +1,6 @@
 ---
 title: 'Backup &#038; Restore LDAP database'
+description: A simple guide on how to backup and restore LDAP database on Linux in LDIF format
 author: Matteo Mattei
 layout: post
 permalink: /backup-restore-ldap-database/

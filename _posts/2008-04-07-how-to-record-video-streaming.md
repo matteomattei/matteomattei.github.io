@@ -1,5 +1,6 @@
 ---
 title: How to record video streaming
+description: A brief guide on how to record video streaming on Linux from command line.
 author: Matteo Mattei
 layout: post
 permalink: /how-to-record-video-streaming/

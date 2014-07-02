@@ -1,5 +1,6 @@
 ---
 title: How to calculate the crc32 of a file in Python
+description: A simple Python snippet of code that shows how to calculate crc32 of a file
 author: Matteo Mattei
 layout: post
 permalink: /how-to-calculate-the-crc32-of-a-file-in-python/

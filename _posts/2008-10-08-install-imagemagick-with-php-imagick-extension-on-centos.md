@@ -1,5 +1,6 @@
 ---
 title: Install imagemagick with PHP imagick extension on CentOS
+description: A brief guide on how to install imagemagick and imagick PHP module on Linux CentOS 
 author: Matteo Mattei
 layout: post
 permalink: /install-imagemagick-with-php-imagick-extension-on-centos/

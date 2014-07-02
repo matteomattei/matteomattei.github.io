@@ -1,5 +1,6 @@
 ---
 title: Script to remove trailing tilde (~) from temporary files
+description: A simple bash script that shows how to remove trailing tildes (~) from generated temporary files
 author: Matteo Mattei
 layout: post
 permalink: /script-to-remove-trailing-tilde-from-temporary-files/

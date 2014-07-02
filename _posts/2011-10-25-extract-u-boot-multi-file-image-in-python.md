@@ -1,5 +1,6 @@
 ---
 title: Extract u-boot multi-file image in Python
+description: This is a little snippet of Python code that shows how to extract images from multi-file u-boot image
 author: Matteo Mattei
 layout: post
 permalink: /extract-u-boot-multi-file-image-in-python/

@@ -1,5 +1,6 @@
 ---
-title: Hide file and directory in apache disabling browsing
+title: Hide file and directory in Apache disabling browsing
+description: This article shows how to hide file and directories in Apache web browser using .htaccess rules
 author: Matteo Mattei
 layout: post
 permalink: /hide-file-and-directory-in-apache-disabling-browsing/

@@ -1,5 +1,6 @@
 ---
 title: Script to remove .svn directories from a project
+description: A simple script to remove .svn folders from within a subversion project
 author: Matteo Mattei
 layout: post
 permalink: /script-to-remove-svn-directories-from-a-project/

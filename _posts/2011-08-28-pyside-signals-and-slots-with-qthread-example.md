@@ -1,5 +1,6 @@
 ---
 title: PySide Signals and Slots with QThread example
+description: This is an example of threading using QThread and signal/slots of Qt libraries in Python using PySide. The same concepts should also be valid for PyQt bindings.
 author: Matteo Mattei
 layout: post
 permalink: /pyside-signals-and-slots-with-qthread-example/

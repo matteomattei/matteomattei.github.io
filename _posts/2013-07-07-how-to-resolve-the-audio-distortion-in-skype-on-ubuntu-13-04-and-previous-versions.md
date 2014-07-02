@@ -10,6 +10,17 @@ categories:
   - Ubuntu
 ---
 If you have problems with Skype audio on Ubuntu (distortion, croak, noise...) the simple way to get it fixed is editing the file */etc/pulse/default.pa*, change one line and restart the system.  
+
+From:
+```
+load-module module-udev-detect use_ucm=0
+```
+
+To:
+```
+load-module module-udev-detect use_ucm=0 tsched=0
+```
+
 For simplicity you can execute the following command that will do all the job:
 
 ```

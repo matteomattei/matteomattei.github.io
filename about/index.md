@@ -18,11 +18,11 @@ Personal informations:
  -   *Personal e-mail* <matteo.mattei@gmail.com>
  -   *Certified e-mail* <matteo.mattei@ingpec.eu>
  -   *Website* http://www.matteomattei.com
- -   *LinkedIn profile* http://it.linkedin.com/in/matteomattei
- -   *Google+ profile* https://plus.google.com/+MatteoMattei
- -   *Facebook profile* https://www.facebook.com/matte0matte1
- -   *Twitter profile* https://github.com/matteomattei
- -   *Github page* https://github.com/matteomattei
+ -   *LinkedIn* [matteomattei](http://it.linkedin.com/in/matteomattei)
+ -   *Google+* [+MatteoMattei](https://plus.google.com/+MatteoMattei)
+ -   *Facebook* [matte0matte1](https://www.facebook.com/matte0matte1)
+ -   *Twitter* [matteomattei](https://github.com/matteomattei)
+ -   *Github* [matteomattei](https://github.com/matteomattei)
  -   *Telephone number* +39 340 8846263
 
 Languages:
@@ -335,7 +335,7 @@ Open Source projects and personal contributions:
  - Member of [LFS-Italia](http://lfs-italia.spaghettilinux.org).
  - Author of QLFS-LIVE
  - I contributed to the porting of a wireless driver for a Linux Embedded board: [Fox Board](http://www.acmesystems.it/).
- - I developed a patch for [phpldapadmin][http://phpldapadmin.sourceforge.net/] for HTTP authentication.
+ - I developed a patch for [phpldapadmin](http://phpldapadmin.sourceforge.net/) for HTTP authentication.
 
 Publications:
 -------------

@@ -1,5 +1,6 @@
 ---
 title: How to clone MySQL database schema in PHP
+description: In this article I show a simple PHP script that is able to clone a MySQL database schema keeping constraints in a new database.
 author: Matteo Mattei
 layout: post
 permalink: /how-to-clone-mysql-database-schema-in-php/
