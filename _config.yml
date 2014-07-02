@@ -1,9 +1,9 @@
 # Site settings
 title: '<span>M</span>atteo <span>M</span>attei'
 tagline: 'Matteo Mattei'
-description: "Hello, my name is Matteo Mattei and this is my website. I work as Linux system administrator and web software developer. I am expert in Linux internals and my preferred languages and technologies are PHP, Python, Bash, HTML, HTML5, CSS3, jQuery, MySQL, Node.js, MongoDB, etc..."
+description: "Hello, my name is Matteo Mattei and this is my personal website. I am computer engineer with a long experience in Linux system administration and web software development. My preferred computer languages and technologies are PHP, Python, Bash, HTML, HTML5, CSS3, jQuery, MySQL, Node.js, MongoDB, etc..."
 url: "http://matteomattei.github.io"
-version: 1.1.1
+version: 1.0
 author:
   name: Matteo Mattei
   email: info@matteomattei.com
