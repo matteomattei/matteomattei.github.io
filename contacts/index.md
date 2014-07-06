@@ -1,7 +1,10 @@
 ---
 layout: page
 title: Contact
-sitemap_date: 2014-06-06
+sitemap:
+  lastmod: 2014-06-06
+  priority: 0.7
+  changefreq: monthly
 ---
 
 ## Mailing Address:

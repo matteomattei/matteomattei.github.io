@@ -2,7 +2,10 @@
 title: Matteo Mattei
 author: Matteo Mattei
 layout: page
-sitemap_date: 2014-06-06
+sitemap:
+  lastmod: 2014-06-06
+  priority: 0.7
+  changefreq: monthly
 ---
 
 Download CV:
