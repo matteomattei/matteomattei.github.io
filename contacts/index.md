@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Contact
+sitemap_date: 2014-06-06
 ---
 
 ## Mailing Address:
