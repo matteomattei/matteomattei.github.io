@@ -21,7 +21,7 @@ Personal informations:
  -   *Working e-mail* <info@matteomattei.com>
  -   *Personal e-mail* <matteo.mattei@gmail.com>
  -   *Certified e-mail* <matteo.mattei@ingpec.eu>
- -   *Website* http://www.matteomattei.com
+ -   *Website* [matteomattei.com](http://www.matteomattei.com)
  -   *LinkedIn* [matteomattei](http://it.linkedin.com/in/matteomattei)
  -   *Google+* [+MatteoMattei](https://plus.google.com/+MatteoMattei)
  -   *Facebook* [matte0matte1](https://www.facebook.com/matte0matte1)
