@@ -13,20 +13,7 @@ When I have to develop background console applications in Python that have to be
 
 And since the Tk library is included in the Python standard library, it is worth using it.
 
-```
-import sys
-
-if sys.version_info > (3,0):
-        import Tkinter as tkinter
-        import tkMessageBox as mbox
-else:
-        import tkinter
-        import tkinter.messagebox as mbox
-
-window = tkinter.Tk()
-window.wm_withdraw()
-mbox.showinfo('my app','my message')
-```
+{% gist matteomattei/b2205a6b480b5a9faa8e %}
 
 Lines 10 and 11 are needed to don't show the main Tk window in background.  
 Updated with support for both python 2.7 and python 3.x
