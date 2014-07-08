@@ -17,41 +17,7 @@ If you have a website in a virtualhost environment that is under attack and star
 
 Create the following file in a secure place and call it *phpsendmail*:
 
-```
-#!/usr/bin/php
-<?php
-$sendmail = '/usr/sbin/sendmail';
-$logfile = '/var/log/mail_php.log';
-
-/* Get email content */
-$logline = '';
-$mail = '';
-$fp = fopen('php://stdin', 'r');
-
-while ($line = fgets($fp))
-{
-    if(preg_match('/^to:/i', $line) || preg_match('/^from:/i', $line))
-    {
-        $logline .= trim($line).' ';
-    }
-    $mail .= $line;
-}
-
-/* Build sendmail command */
-$cmd = 'echo ' . escapeshellarg($mail) . ' | '.$sendmail.' -t -i';
-for ($i = 1; $i &lt; $_SERVER['argc']; $i++)
-{
-    $cmd .= escapeshellarg($_SERVER['argv'][$i]).' ';
-}
-
-/* Log line */
-$path = isset($_ENV['PWD']) ? $_ENV['PWD'] : $_SERVER['PWD'];
-file_put_contents($logfile, date('Y-m-d H:i:s') . ' ' . $logline .'  ==> ' .$path."\n", FILE_APPEND);
-
-/* Call sendmail */
-return shell_exec($cmd);
-?>
-```
+{% gist matteomattei/f362f7902a0084934dfb %}
 
 Now create the log file and set the correct permissions:
 
