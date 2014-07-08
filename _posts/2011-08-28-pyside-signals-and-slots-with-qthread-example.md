@@ -18,7 +18,8 @@ This example uses the api version 2 (introduced with PyQt 4.5) to connect signal
 
 {% gist matteomattei/a62338bac981c34f301f %}
 
-For more information you can look at:  
-QThread documentation: http://doc.qt.nokia.com/latest/qthread.html
-PySide signals and slots: http://developer.qt.nokia.com/wiki/Signals_and_Slots_in_PySide  
-PyQt api 2 on PySide: <http://www.pyside.org/docs/pseps/psep-0101.html>
+For more information you can look at: 
+
+ - QThread documentation: <http://doc.qt.nokia.com/latest/qthread.html>
+ - PySide signals and slots: <http://developer.qt.nokia.com/wiki/Signals_and_Slots_in_PySide>
+ - PyQt api 2 on PySide: <http://www.pyside.org/docs/pseps/psep-0101.html>
