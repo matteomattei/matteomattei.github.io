@@ -585,3 +585,13 @@ a:focus {
   width: 100%;
   height: auto;
 }
+@media (min-width: 990px) {
+ .project_content {
+   width: 60%;
+   float: left;
+ }
+ .project_media {
+   width: 40%;
+   float: left;
+ }
+}
