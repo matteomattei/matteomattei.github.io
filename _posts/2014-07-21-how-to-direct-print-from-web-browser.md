@@ -1,5 +1,5 @@
 ---
-title: Backup Virtualhosts and MySQL data on Plesk server and store images in a remote FTP server
+title: How to direct print from web browser 
 description: This article explains the various ways to achive the objective to print directly from a web browser.
 author: Matteo Mattei
 layout: post
