@@ -43,12 +43,16 @@
     </div>
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+    <script type="text/javascript" src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/nanogallery/4.4.2/jquery.nanogallery.min.js"></script>
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-520126e203a7ecab"></script>
     <script type="text/javascript">
 
     $(document).ready(function () {
+      /* css above the fold */
+      $("head link[rel='stylesheet']").last().after('<link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css" />');
+      $("head link[rel='stylesheet']").last().after('<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/nanogallery/4.4.2/css/nanogallery.css" type="text/css">');
+
       /* initialize sintax highlight */
       hljs.initHighlightingOnLoad();
 
