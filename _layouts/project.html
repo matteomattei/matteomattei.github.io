@@ -1,11 +1,17 @@
 ---
 layout: default
 ---
-
 <div class="project">
   <h1 class="project-title">{{ page.title }}</h1>
-  <div class="project_content">{{ content }}</div>
-  <div class="project_media"></div>
+  {% if page.image_url %}
+    <div class="project_image"><img src="{{ page.image_url }}" alt="{{ page.title }}" /></div>
+  {% endif %}
+  <div class="project_content">
+    {{ content }}
+  </div>
+  {% if page.flickr_album %}
+    <div class="project_media"></div>
+  {% endif %}
 </div>
 <div id="disqus_thread"></div>
 <script type="text/javascript">

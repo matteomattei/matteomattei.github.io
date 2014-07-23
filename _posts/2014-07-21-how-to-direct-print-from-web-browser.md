@@ -40,6 +40,10 @@ The idea here is to have a web server running for example Apache and PHP (but ev
 
 The function above accepts a string of documents (space separated), sends a printer command and then polls the printer queue (the spooler) using **lpd** command and wait for the printer to return *ready*. Just for reference, the above function is a snippet of code I used to print barcodes with a Dymo LabelWrite 450 Turbo and 99012 paper labels.
 
+<div class="video-container">
+<iframe width="1280" height="720" src="//www.youtube.com/embed/eFkj4FVTaow?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+
 
 Direct printing using browser options
 -------------------------------------
