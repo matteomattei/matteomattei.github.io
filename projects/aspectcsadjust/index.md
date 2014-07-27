@@ -1,5 +1,6 @@
 ---
 title: AspectCSAdjust
+description: A desktop tool to parse and manipulate output of ASpectCS chemical software.
 author: Matteo Mattei
 layout: project
 image_url: https://farm5.staticflickr.com/4109/4951335431_e6b03cdf53_b.jpg

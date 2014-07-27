@@ -1,10 +1,55 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-  {% if page.description %}<meta name="description" content="{{ page.description }}" />{% else if post.description %}<meta name="description" content="{{ post.description }}" />{% else %}<meta name="description" content="{{ site.description }}" />{% endif %}
-  {% if page.categories %}<meta name="keywords" content="{{ page.categories | join: ','}}" />{% else if post.categories %}<meta name="keywords" content="{{ post.categories | join: ','}}" />{% else %}<meta name="keywords" content="{{ site.keywords | join: ','}}" />{% endif %}
-  {% if page.date %}<meta http-equiv="date" content="{{ page.date | date: '%A, %d  %Y %H:%M:%S GMT'}}" />{% endif %}{% if post.date %}<meta http-equiv="date" content="{{ post.date | date: '%A, %d  %Y %H:%M:%S GMT'}}" />{% endif %}
+
+  <!-- description -->
+  {% if page.description %}
+  <meta name="description" content="{{ page.description }}" />
+  {% else %}
+  <meta name="description" content="{{ site.description }}" />
+  {% endif %}
+  <!-- end description -->
+
+  <!-- keywords -->
+  {% if page.categories %}
+  <meta name="keywords" content="{{ page.categories | join: ','}}" />
+  {% else %}
+  <meta name="keywords" content="{{ site.keywords | join: ','}}" />
+  {% endif %}
+  <!-- end keywords -->
+
+  <!-- date -->
+  {% if page.date %}
+  <meta http-equiv="date" content="{{ page.date | date: '%A, %d  %Y %H:%M:%S GMT'}}" />
+  {% endif %}
+  <!-- end date -->
+
+  <!-- robots -->
   <meta name="robots" content="{{ page.index }}INDEX,{{ page.follow }}FOLLOW" />
+  <!-- end robots -->
+
+  <!-- opengraph -->  
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} &middot; {% endif %}{{ site.tagline }}" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+  <meta property="og:image" content="{% if page.img_url %}{{ page.img_url }}{% else %}{{ site.gravatar_img }}{% endif %}" />
+  <meta property="og:site_name" content="{{ site.tagline }}" />
+  <meta property="og:type" content="{% if page.path contains '_posts/' %}article{% else %}website{% endif %}" />
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+  {% if page.path contains '_posts/' %}
+  <meta property="article:author" content="{{ site.url }}/about/" />
+  {% endif %}
+  {% if page.categories %}
+    {% for category in page.categories limit:1 %}
+    <meta content="{{ category }}" property="article:section">
+    {% endfor %}
+  {% endif %}
+  {% if page.tags %}
+    {% for tag in page.tags %}
+    <meta content="{{ tag }}" property="article:tag">
+    {% endfor %}
+  {% endif %}
+  <!-- end opengraph -->
+
   <title>
     {% if page.title %}{{ page.title }} &middot; {% endif %}{{ site.tagline }}
   </title>
@@ -22,7 +67,7 @@
 
   <script type="text/javascript">
     /* disqus settings */
-    var disqus_shortname = 'matteomattei'; // required: replace example with your forum shortname
+    var disqus_shortname = 'matteomattei'; /* required: replace example with your forum shortname */
     var disqus_identifier = '{{ page.url }}';
     var disqus_url = 'http://matteomattei.github.io{{ page.url }}';
   </script>
