@@ -4,8 +4,6 @@ description: A guide on how to reinstall grub bootloader in Linux OpensSuse
 author: Matteo Mattei
 layout: post
 permalink: /opensuse-10-3-cd-and-dvd-with-fault-installer-reinstall-the-bootloade/
-screenshot1:
-  - 
 categories:
   - linux
   - grub

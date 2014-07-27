@@ -616,6 +616,7 @@ a:focus {
 .page-text {
   float:left;
   padding: 0 0 0 15px;
+  width: 65%;
 }
 .page-image img {
   width: 300px;
@@ -632,6 +633,7 @@ a:focus {
   }
   .page-text {
     float:none;
+    width:auto;
   }
   .page-image img {
     width: 100%;

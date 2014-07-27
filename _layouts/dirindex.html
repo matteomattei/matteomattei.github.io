@@ -44,7 +44,7 @@ hide_subdirindex: true
             {{ subpage.url | remove_first:url_prefix | remove_first:'index.html' }}
           {% endif %}
           </h3>
-          <p>some text...</p>
+          <p>{% if subpage.content %}{{ subpage.content | strip_html | truncatewords:20 }}{% else %}...{% endif %}</p>
         </div>
         <div style="clear:both"></div>
       </a>

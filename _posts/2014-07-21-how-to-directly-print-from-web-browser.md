@@ -1,9 +1,9 @@
 ---
-title: How to direct print from web browser 
+title: How to directly print from web browser 
 description: This article explains the various ways to achive the objective to print directly from a web browser.
 author: Matteo Mattei
 layout: post
-permalink: /how-to-direct-print-from-web-browser/
+permalink: /how-to-directly-print-from-web-browser/
 categories:
   - print
   - web
