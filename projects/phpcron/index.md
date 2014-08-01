@@ -2,12 +2,15 @@
 title: PHPCron 
 author: Matteo Mattei
 layout: project
-image_url: https://farm5.staticflickr.com/4109/4951335431_e6b03cdf53_b.jpg
-album: 72157624621810071
+image_url: 
+album: 
 sitemap:
   lastmod: 2014-07-22
   priority: 0.7
   changefreq: monthly
+categories:
+  - php
+  - cron
 ---
 
 PhpCron is a library for running and managing cron jobs without a real cron daemon (useful for Linux web hostings that don’t allow cron jobs).

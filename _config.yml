@@ -8,6 +8,17 @@ version: 1.0
 author:
   name: "Matteo Mattei"
   email: "info@matteomattei.com"
+keywords:
+  - matteomattei
+  - matteo mattei
+  - system administration
+  - linux
+  - matteomattei.com
+  - php
+  - python
+  - html
+  - jquery
+  - computer engineer
 # Build settings
 markdown: rdiscount
 permalink: pretty
