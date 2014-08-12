@@ -18,12 +18,6 @@
   {% endif %}
   <!-- end keywords -->
 
-  <!-- date -->
-  {% if page.date %}
-  <meta http-equiv="date" content="{{ page.date | date: '%A, %d  %Y %H:%M:%S GMT'}}" />
-  {% endif %}
-  <!-- end date -->
-
   <!-- robots -->
   <meta name="robots" content="{{ page.index }}INDEX,{{ page.follow }}FOLLOW" />
   <!-- end robots -->
@@ -69,6 +63,6 @@
     /* disqus settings */
     var disqus_shortname = 'matteomattei'; /* required: replace example with your forum shortname */
     var disqus_identifier = '{{ page.url }}';
-    var disqus_url = 'http://matteomattei.github.io{{ page.url }}';
+    var disqus_url = 'http://matteomattei.com{{ page.url }}';
   </script>
 </head>

@@ -3,7 +3,7 @@ title: NGPM Global Platform (FlexPay M5)
 description: An outdoor secure payment platform for fuel dispensers based on embedded Linux system.
 author: Matteo Mattei
 layout: project
-image_url: https://farm6.staticflickr.com/5070/5598115264_a79333bf3d_o.jpg 
+image_url: https://farm3.staticflickr.com/2931/14815267802_6bcc3563ba_o.jpg
 album:
 sitemap:
   lastmod: 2014-07-31
