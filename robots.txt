@@ -1,4 +1,3 @@
 User-agent: *
-Disallow: 
 Disallow: /tools/
 Sitemap: http://www.matteomattei.com/sitemap.xml
