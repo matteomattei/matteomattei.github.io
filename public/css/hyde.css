@@ -588,6 +588,19 @@ a:focus {
 .project_image img {
   width:100%;
 }
+.post_img {
+  width: 100%;
+  border: 20px solid #033649;
+  margin: 0 0 15px;
+}
+.post_img img {
+  margin: 0;
+  padding: 30px;
+  width: 100%;
+}
+.addthis_toolbox {
+  margin: 0 0 15px;
+}
 /* projects */
 .dirindex .pages ul {
   overflow: auto;

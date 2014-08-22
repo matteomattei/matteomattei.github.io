@@ -12,6 +12,11 @@ layout: default
       <img class="img-icon" src="/public/site_images/iconmonstr-tags-3-icon.svg" alt="tags" />{% for categories in post.categories %} <a href="/tags#{{ categories }}">{{ categories }}</a> {% if forloop.last != true %} {% endif %} {% endfor %}
       <img class="img-icon" src="/public/site_images/iconmonstr-speech-bubble-14-icon.svg" alt="comments"/><a href="{{ site.url }}{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.url }}"></a>
     </span>
+    {% if post.img_url %}
+    <div class="post_img">
+      <img src="{{ post.img_url }}" alt="post_image" />
+    </div>
+    {% endif %}
     {{ post.content | split: '<!-- more -->' | first }}
     <hr />
   </div>

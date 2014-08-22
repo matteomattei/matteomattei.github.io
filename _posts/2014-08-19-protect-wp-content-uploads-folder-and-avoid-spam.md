@@ -14,16 +14,15 @@ categories:
   - spam
   - apache
 ---
+Usually it is not a problem with Wordpress itself but sometimes we install lot of plugins that come from not well known origins or that are buggy and they can compromise the entire server. So, after dozens of server maintanance sessions, I am going to summarize all the best practice I found.
 
-Usually it is not a problem with Wordpress itself but sometimes we install lot of plugins that comes from a not well known origins or that are buggy and they can compromise the entire server. So, after dozens of server sanitizations I am going to summarize all the best practice I found.
-
- - If you have direct control of the admin area of WP you can restrict the filesystem permissions of *uploads* folder:
+ - If you have direct control of the admin area of WP you can restrict the filesystem permissions of *uploads* folder to only user and group:
 
 ```
 chmod o-w wp-content/uploads
 ```
 
- Remember that in this way you are not able to upload files from the admin area.
+ Remember that in this way you are not able to upload files from the admin area if the web server runs with *other* privileges.
  
  - Check the origin of all plugins and make sure to keep your WP installation up to date. In fact attackers often use the last vulnerabilities to attack your server!
  - Use a different user for each domain. This is a general best practice because if an attacker haks your website, he will not be able to access to all other websites in the same server with the same credentials.
@@ -31,3 +30,4 @@ chmod o-w wp-content/uploads
 
 {% gist matteomattei/3c31ad6f07c821e0b230 %}
 
+This third rule is very important and saved me bad headaches.
