@@ -26,6 +26,9 @@ layout: compress
               <a href="/about/">About</a>
             </li>
             <li>
+              <a href="/personal/">Personal</a>
+            </li>
+            <li>
               <a href="/contacts/">Contacts</a>
             </li>
           </ul>
@@ -48,7 +51,7 @@ layout: compress
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script type="text/javascript" src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
     {% if page.album %}
-      <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/nanogallery/4.4.2/jquery.nanogallery.min.js"></script>
+      <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/nanogallery/5.2.1/jquery.nanogallery.min.js"></script>
     {% endif %}
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-520126e203a7ecab"></script>
     <script type="text/javascript">
@@ -57,7 +60,7 @@ layout: compress
       /* css above the fold */
       $("head link[rel='stylesheet']").last().after('<link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css" />');
       {% if page.album %}
-        $("head link[rel='stylesheet']").last().after('<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/nanogallery/4.4.2/css/nanogallery.css" type="text/css">');
+        $("head link[rel='stylesheet']").last().after('<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/nanogallery/5.2.1/css/nanogallery.min.css" type="text/css">');
       {% endif %}
 
       /* initialize sintax highlight */
