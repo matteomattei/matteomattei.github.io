@@ -1,1 +1,2 @@
-jekyll build && rsync -v -rz --checksum --delete _site/ web1:/var/www/nginx/matteomattei.com/public_html/
+jekyll build && rsync -v -rz --checksum --delete _site/ web1:/var/www/matteomattei.com/public_html/
+ssh web1 chown web5000:web5000 -R /var/www/matteomattei.com/public_html/
