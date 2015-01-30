@@ -306,11 +306,17 @@ putenv("REMOTE_ADDR=".@$_SERVER["REMOTE_ADDR"]);
 ?>
 ```
 
-Now make both executable:
+Now make they both have executable flag:
 
 ```
 chmod +x /usr/local/bin/sendmail-wrapper
 chmod +x /usr/local/bin/env.php
+```
+
+Add also */usr/local/bin/* to the open_basedir php list in **/etc/apache2/conf.d/phpmyadmin.conf**
+
+```
+php_admin_value open_basedir /usr/share/phpmyadmin/:/etc/phpmyadmin/:/var/lib/phpmyadmin/:/usr/local/bin/
 ```
 
 Restart Postfix:
