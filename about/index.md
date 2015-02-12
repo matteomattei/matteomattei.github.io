@@ -69,6 +69,17 @@ Studies and trainings:
 
 Working experiences:
 --------------------
+ - *October 2014/Present* I cover the role of CTO and Co-Founder of [MyResApp](https://www.myresapp.com) where I am responsible to maintain, design and lead the development of the platform:
+     - HTML5
+     - jQuery
+     - Ajax
+     - Twitter Bootstrap
+     - CodeIgniter PHP MVC framework
+     - Nginx
+     - Apache
+     - NodeJs (ExpressJs)
+     - MySQL
+     - MongoDb
  - *March 2014* I developed a web application (CyanideChecker) for [Bluclad s.r.l.](http://www.bluclad.it) that is used to check and monitor quantity of Cyanide to sell:
      - HTML5
      - jQuery
