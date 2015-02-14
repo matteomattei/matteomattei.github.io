@@ -72,3 +72,47 @@ You only need to set a cron-job now to execute the backup every day:
 04 04 * * * root /root/megabackup.sh
 ```
 
+Update 2015-02-14: MegaFuse
+---------------------------
+
+I recently found a better tool to accomplish my needings, it is called [MegaFuse](https://github.com/matteoserva/MegaFuse) and it works like a Linux mountpoint.
+First of all download all needed dependencies:
+
+```
+apt-get install libcrypto++-dev libcurl4-openssl-dev libdb5.1++-dev libfreeimage-dev libreadline-dev libfuse-dev make
+```
+
+Then download MegaFuse and compile it:
+
+```
+git clone https://github.com/matteoserva/MegaFuse
+cd MegaFuse
+make
+```
+
+Now create a configuration file **/root/.megafuse.conf** with your Mega credentials:
+
+```
+USERNAME = your_mega_email
+PASSWORD = your_mega_password
+MOUNTPOINT = /mnt
+```
+
+The above configuration assume you will use /mnt as your mountpoint (change it if you want).
+
+Protect it in the same way:
+
+```
+chmod 640 /root/.megafuse.conf
+```
+
+And this is the *revisited* script to do the backup:
+
+{% gist matteomattei/6deb97e386d0557c1788 %}
+
+You can now configure the cronjob:
+
+```
+04 04 * * * root /root/megafusebackup.sh
+```
+
