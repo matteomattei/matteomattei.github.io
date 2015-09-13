@@ -625,11 +625,12 @@ a:focus {
 }
 .page-image {
   float:left;
+  width:40%;
 }
 .page-text {
   float:left;
   padding: 0 15px 15px 15px;
-  width: 65%;
+  width: 60%;
 }
 .page-image img {
   width: 300px;

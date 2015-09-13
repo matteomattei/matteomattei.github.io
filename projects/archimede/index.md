@@ -47,5 +47,4 @@ Main features:
 
 License:
 --------
- - Proprietary code 
-
+ - Proprietary code (ask for estimate)
