@@ -34,5 +34,5 @@ Then, to set a cronjob to do it automatically every day, open */etc/crontab* and
 
 ```
 # mysql backup
-32 4  *  *  *   root    /root/backup_mysql.sh
+32 4  *  *  *   root    /root/mysql_backup.sh
 ```
