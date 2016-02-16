@@ -24,3 +24,4 @@ markdown: rdiscount
 permalink: pretty
 highlighter: pygments
 paginate: 6
+gems: [jekyll-paginate, jekyll-gist]
