@@ -22,35 +22,14 @@ Power up the RPi2 (or RPi1) with the SD plugged in and log in:
 user: **pi**
 password: **raspberry**
 
-Now configure the network (wired in my case) editing */etc/network/interfaces*:
-
-```sudo vi /etc/network/interfaces```
+Now configure the network (wired static ip in my case) editing */etc/dhcpcd.conf* and adding the following lines at the bottom:
 
 ```
-# interfaces(5) file used by ifup(8) and ifdown(8)
-
-# Please note that this file is written to be used with dhcpcd
-# For static IP, consult /etc/dhcpcd.conf and 'man dhcpcd.conf'
-
-# Include files from /etc/network/interfaces.d:
-source-directory /etc/network/interfaces.d
-
-auto lo
-iface lo inet loopback
-
-auto eth0
-iface eth0 inet static
-address 192.168.1.130
-netmask 255.255.255.0
-gateway 192.168.1.254 
-
-allow-hotplug wlan0
-iface wlan0 inet manual
-    wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
-
-allow-hotplug wlan1
-iface wlan1 inet manual
-    wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+# my custom static settings
+interface eth0
+static ip_address=192.168.1.130/24
+static routers=192.168.1.254
+static domain_name_servers=192.168.1.254
 ```
 
 Configure Kiosk
@@ -64,7 +43,7 @@ sudo raspi-config
 
 In particular,
 
-- Set localization (keyboard and locale)
+- Set localization (keyboard and system locale)
 - Enable SSH
 - Expand root partition
 - Set autologin on console (B2)
@@ -86,11 +65,22 @@ Now create a startup script:
 ```
 #!/bin/bash
 
-xset -dpms     # disable DPMS (Energy Star) features.
-xset s off     # disable screen saver
-xset s noblank # don't blank the video device
+# disable DPMS (Energy Star) features.
+xset -dpms
+
+# disable screen saver
+xset s off
+
+# don't blank the video device
+xset s noblank
+
+# disable mouse pointer
 unclutter &
+
+# run window manager
 matchbox-window-manager -use_cursor no -use_titlebar no  &
+
+# run browser
 midori -e Fullscreen -a http://www.google.com
 ```
 
