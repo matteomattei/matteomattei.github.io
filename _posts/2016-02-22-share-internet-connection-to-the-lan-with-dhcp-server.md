@@ -148,7 +148,7 @@ Web(ACCEPT)     loc             $FW
 
 # DNAT rules (useful for natting a service on a device)
 # this rule opens port 8080 from internet to port 80 of 192.168.0.2 in TCP
-# ACCEPT                net             192.168.0.2:80  tcp     8080
+#DNAT            net             loc:192.168.0.2:80     tcp     8080
 ```
 
 The above configuration allows SSH connections from local and from remote as well as Web access.
