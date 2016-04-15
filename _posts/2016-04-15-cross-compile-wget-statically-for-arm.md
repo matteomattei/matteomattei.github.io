@@ -15,7 +15,7 @@ The following script can be used to statically cross compile **wget** for ARM.
 
 Requirements:
 
-- You need *openssl* and *zlib* already present in the current **$ROOTPATH** directory with related libraries and included respectively inside *libs" and *include* folders.
+- You need *openssl* and *zlib* already present in the current **$ROOTPATH** directory with related libraries and included respectively inside *libs* and *include* folders.
 - You need a *glibc* compiled with `--enable-static-nss` flag so that **getaddrinfo** and **gethostbyname** cannot complain at link time.
 
 {% gist matteomattei/fa5ad16c920e28a7f416b8165edcd84d %}
