@@ -1,7 +1,7 @@
 # Site settings
 title: '<span>M</span>atteo <span>M</span>attei'
 tagline: 'Matteo Mattei'
-description: "Hello, my name is Matteo Mattei and this is my personal website. I am computer engineer with a long experience in Linux system administration and web software development. My preferred computer languages and technologies are PHP, Python, Bash, HTML, HTML5, CSS3, jQuery, MySQL, Node.js, MongoDB, etc..."
+description: "Hello, my name is Matteo Mattei and this is my personal website. I am computer engineer with a long experience in Linux system administration and web software development."
 url: "http://matteomattei.com"
 gravatar_img: "http://www.gravatar.com/avatar/802c6bc968e99842beff00949058d922.png"
 version: 1.0
@@ -25,3 +25,6 @@ permalink: pretty
 highlighter: pygments
 paginate: 6
 gems: [jekyll-paginate, jekyll-gist]
+exclude: [node_modules]
+gist:
+  noscript: false

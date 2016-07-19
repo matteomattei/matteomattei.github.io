@@ -20,7 +20,9 @@ layout: default
   {% endif %}
   {{ content }}
   {% if page.album %}
-    <div class="project_media"></div>
+    <div class="embed-container">
+      <iframe src="https://www.flickr.com/photos/matteomattei/sets/{{ page.album }}/player/" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+    </div>
   {% endif %}
 </div>
 

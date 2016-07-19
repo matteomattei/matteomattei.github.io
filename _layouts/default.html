@@ -32,7 +32,7 @@ layout: compress
               <a href="/contacts/">Contacts</a>
             </li>
           </ul>
-          <p>&copy; 2006-{{ site.time | date: '%Y' }} {{ site.author.name }} - all rights reserved. About my <a href="http://github.com/matteomattei/matteomattei.github.io">blog code</a></p>
+          <p class="copyright">&copy; 2006-{{ site.time | date: '%Y' }} {{ site.author.name }} - all rights reserved. About my <a href="http://github.com/matteomattei/matteomattei.github.io">blog code</a></p>
           <a href="http://it.linkedin.com/in/matteomattei"><img class="img-feed" src="/public/site_images/iconmonstr-linkedin-3-icon.svg" alt="linkedin" /></a>
           <a href="/atom.xml"><img class="img-feed" src="/public/site_images/iconmonstr-rss-3-icon.svg" alt="rss" /></a>
           <a href="https://twitter.com/matte0matte1"><img class="img-feed" src="/public/site_images/iconmonstr-twitter-3-icon.svg" alt="twitter" /></a>
@@ -50,30 +50,15 @@ layout: compress
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script type="text/javascript" src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
-    {% if page.album %}
-      <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/nanogallery/5.2.1/jquery.nanogallery.min.js"></script>
-    {% endif %}
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-520126e203a7ecab"></script>
     <script type="text/javascript">
 
     $(document).ready(function () {
       /* css above the fold */
       $("head link[rel='stylesheet']").last().after('<link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css" />');
-      {% if page.album %}
-        $("head link[rel='stylesheet']").last().after('<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/nanogallery/5.2.1/css/nanogallery.min.css" type="text/css">');
-      {% endif %}
 
       /* initialize sintax highlight */
       hljs.initHighlightingOnLoad();
-
-      {% if page.album %}
-        /* nanogallery */
-        jQuery(".project_media").nanoGallery({
-          'kind':'flickr',
-          'userID':'53174696@N08',
-          'photoset':'{{ page.album }}',
-        });
-      {% endif %}
 
       /* disqus */
       var s = document.createElement('script'); s.async = true;

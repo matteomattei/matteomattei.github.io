@@ -3,7 +3,7 @@ title: Archimede Chemical Software
 description: Archimede Chemical Software is a web application developed for chemical laboratories. It can be used for analysis management, quality control, seals, technical specs, analysis certificates and may other things.
 author: Matteo Mattei
 layout: project
-image_url: https://farm4.staticflickr.com/3856/14734780286_9516ff4816_o.jpg 
+image_url: https://c1.staticflickr.com/9/8852/28108282660_462c11d23f_o.png
 album: 72157645556920630
 sitemap:
   lastmod: 2014-06-06

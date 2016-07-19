@@ -1,6 +1,6 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no" />
 
   <!-- description -->
   {% if page.description %}
@@ -22,7 +22,7 @@
   <meta name="robots" content="{{ page.index }}INDEX,{{ page.follow }}FOLLOW" />
   <!-- end robots -->
 
-  <!-- opengraph -->  
+  <!-- opengraph -->
   <meta property="og:title" content="{% if page.title %}{{ page.title }} &middot; {% endif %}{{ site.tagline }}" />
   <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
   <meta property="og:image" content="{% if page.img_url %}{{ page.img_url }}{% else %}{{ site.gravatar_img }}{% endif %}" />

@@ -51,6 +51,8 @@ html,
 body {
   margin: 0;
   padding: 0;
+  max-width:100%;
+  overflow-x:hidden;
 }
 
 body {
@@ -230,13 +232,8 @@ img {
  */
 
 .lead {
-  font-size: 20px;
+  font-size: 1em;
   font-weight: 300;
-}
-@media (min-width: 990px) {
-  .lead {
-    font-size: 16px;
-  }
 }
 
 
@@ -291,6 +288,9 @@ a:focus {
 .masthead a {
   color: #fff;
 }
+.masthead p.copyright {
+  font-size:0.8em;
+}
 
 /* Footer area of masthead */
 .colophon {
@@ -308,7 +308,7 @@ a:focus {
 /* Responsive masthead */
 @media (min-width: 768px) {
   .masthead-inner {
-    padding: 40px;
+    /*padding: 20px;*/
   }
 }
 @media (min-width: 990px) {
@@ -318,7 +318,7 @@ a:focus {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 25%;
+    width:330px;
     margin-bottom: 0;
   }
   .masthead-inner {
@@ -334,27 +334,31 @@ a:focus {
     margin-top: 10px;
   }
 }
-
-
-/* Container
- *
- * Align the contents of the site above the proper threshold with some margin-fu
- * with a 25%-wide `.masthead`.
- */
-
-.content {
-  padding: 40px 20px;
+@media (min-width:990px) and (max-width: 1366px){
+  .masthead-inner p.lead {
+    font-size:0.9em;
+  }
+  .colophon {
+    font-size:0.9em;
+  }
+}
+@media (min-width:1024px) and (max-width: 1024px){
+  .masthead-inner p.lead {
+    font-size:0.8em;
+  }
+  .colophon {
+    font-size:0.9em;
+  }
 }
 
+.container {
+  padding: 20px;
+}
 /* Center container in available real estate */
 @media (min-width: 990px) {
-  .content {
-    padding: 60px 0;
-  }
   .container {
-    width: 55%;
-    margin-left: 35%;
-    margin-right: 10%;
+    margin-left: 380px;
+    margin-right: 50px;
   }
 }
 
@@ -463,12 +467,6 @@ a:focus {
     margin-right: 35%;
   }
 }
-
-
-
-/*Extras
-
-*/
 
 .img-circular{
  width: 80px;
@@ -617,61 +615,65 @@ a:focus {
   display: block;
   color: white;
   border-radius:15px;
+  height: 180px;
+  width:90%;
+  margin:auto;
 }
 .dirindex .pages ul li a:hover {
   opacity: 1;
   filter: alpha(opacity=100); /* For IE8 and earlier */
   color: white;
+  height: 180px;
 }
 .page-image {
   float:left;
-  width:40%;
+  width:30%;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #7bafba;
+  border-radius: 15px 0 0 15px;
+  height:100%;
+  position:relative;
 }
 .page-text {
   float:left;
   padding: 0 15px 15px 15px;
-  width: 60%;
+  width: 70%;
+  height:100%;
+}
+.page-image .helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }
 .page-image img {
-  width: 300px;
-  height: 180px;
-  padding: 0;
-  margin: 0;
+  width:90%;
+  max-height: 160px;
   vertical-align: middle;
-  display: inline;
-  border-radius:15px 0 0 15px;
+  margin: auto;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+}
+@media (min-width: 990px) and (max-width:1200px) {
+  .page-text h3{
+    font-size:1em;
+  }
+  .page-text p{
+    font-size:0.9em;
+  }
 }
 @media (max-width: 768px) {
-  .page-image {
-    float:none;
+  .page-text h3{
+    font-size:0.9em;
   }
-  .page-text {
-    float:none;
-    width:auto;
-  }
-  .page-image img {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    height: auto;
-    border-radius:15px 15px 0 0;
+  .page-text p{
+    font-size:0.7em;
   }
 }
-/* videos */
-.video-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 30px; height: 0; overflow: hidden;
-}
-.video-container iframe,
-.video-container object,
-.video-container embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+
 /* fonts */
 @font-face {
   font-family: 'Abril Fatface';
@@ -709,4 +711,4 @@ a:focus {
   font-weight: 400;
   src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/xjAJXh38I15wypJXxuGMBobN6UDyHWBl620a-IRfuBk.woff) format('woff');
 }
-
+.embed-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }

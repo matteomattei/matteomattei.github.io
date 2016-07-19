@@ -3,7 +3,7 @@ title: Matteo Mattei
 author: Matteo Mattei
 layout: page
 sitemap:
-  lastmod: 2014-06-06
+  lastmod: 2016-07-20
   priority: 0.7
   changefreq: monthly
 ---
@@ -18,9 +18,9 @@ Personal informations:
  -   *Born* in Florence - Italy on 5th February 1982.
  -   *Living* in Campi Bisenzio (FI) - Italy.
  -   *Citizenship* Italian.
- -   *Working e-mail* <info@matteomattei.com>
- -   *Personal e-mail* <matteo.mattei@gmail.com>
- -   *Certified e-mail* <matteo.mattei@ingpec.eu>
+ -   *Working e-mail* [info@matteomattei.com](mailto:info@matteomattei.com)
+ -   *Personal e-mail* [matteo.mattei@gmail.com](mailto:matteo.mattei@gmail.com)
+ -   *Certified e-mail* [matteo.mattei@ingpec.eu](mailto:matteo.mattei@ingpec.eu)
  -   *Website* [matteomattei.com](http://www.matteomattei.com)
  -   *LinkedIn* [matteomattei](http://it.linkedin.com/in/matteomattei)
  -   *Google+* [+MatteoMattei](https://plus.google.com/+MatteoMattei)
@@ -53,10 +53,13 @@ Independent coursework:
  - *2011* – Project Management in Open Source software development model: Control Systems. Course held and recognized by [Regione Toscana](http://www.regione.toscana.it/).
  - *2011* – Project Management in Open Source software development model: Cathedral vs Bazaar. Course held and recognized by [Regione Toscana](http://www.regione.toscana.it/).
  - *2009* – Virtualization Experience with VMWare ESX. Course held by [Computer Gross](http://www.computergross.it/) (IBM business partner).
- - *2007* – Computer, Network and Wireless Forensics at Pisa's University. Course held by [Raggruppamento Carabinieri Investigazioni Scientifiche](http://www.carabinieri.it/Internet/Arma/Oggi/RACIS/). 
+ - *2007* – Computer, Network and Wireless Forensics at Pisa's University. Course held by [Raggruppamento Carabinieri Investigazioni Scientifiche](http://www.carabinieri.it/Internet/Arma/Oggi/RACIS/).
 
 Studies and trainings:
 ----------------------
+ - *March 2016* Problem Solving Process course hold by Danaher Corporations at Gilbarco Veeder Root.
+ - *2015 - 2016* Efficacia Operativa Personale &amp; Efficacia Operativa Interpersonale - at Gilbarco Veeder Root.
+ - *2014* PMP (Project Management Professional) by PMI at Gilbarco Veeder Root.
  - *June 2007* Certification CCNA at [Pisa's University](http://www.web.ing.unipi.it/) after network infrastructure course during 2005.
  - *February 2006* Bachelor degree in Computer Engineering at [Pisa's University](http://www.web.ing.unipi.it/).
  - *October 2005* Participation at Net&SystemSecurity conference at Pisa.
@@ -69,6 +72,47 @@ Studies and trainings:
 
 Working experiences:
 --------------------
+ - *2015/Present* Co-Founder of [Chip2Bit](http://www.chip2bit.com).
+ - *2015/Present* Co-Founder of [Rooma](https://www.rooma.it) a SaaS platform to help B&B, hostels, little hotel, motel, etc... to manage reservations.
+    - NodeJS (expressjs)
+    - CouchDB (live sync through multiple devices)
+    - PHP
+    - PayPal API with recurring payments
+    - MySQL
+    - SSL certificates
+    - CodeIgniter 3.x
+ - *November 2015/Present* System Administrator and web software developer at [Luxury Brands Control](http://www.luxurybrandscontrol.com) where I designed, configured and installed the network infrastructure and the client and server hosts. I also developed the internal software [PeltPro](projects/peltpro) to manage all operations of the laboratory.
+    - Router/switches/access points
+    - Firwalling (iptables) and masquerading
+    - DHCP
+    - RaspberryPi installed as a kiosk system on a HDMI TV to monitor status of the measured leathers.
+    - Barcode scanners.
+    - PHP5
+    - MySQL
+    - Python
+    - Bash
+ - *June 2015/Present* I cover the role of Linux System Administrator and Cloud Architect at [ShoppingScanner](http://www.shoppingscanner.com) where I am responsible to maintain, design and hold the entire server infrastructure and build automated services for backup and background operations:
+    - HTML5
+    - PHP (CodeIgniter)
+    - Linux System Administration
+    - Apache
+    - MySQL
+    - Python
+    - S3 API
+    - CDN (content delivery network)
+    - Sphinx search engine
+    - Memcached
+    - GIT
+    - Load balancer
+ - *2015* I developed [UsbAtlas](http://usbatlas.colposcopyapp.com) with the sponsorship of [Fondazione Umberto Veronesi](http://www.fondazioneveronesi.it/) for doctors of Congo during the program of Quality control in colposcopy. The application has been developed as a singole page application using AngularJS and converted in executable using node webkit (nwbuild) to be installed in USB sticks.
+    - HTML5
+    - AngularJs
+    - JSON
+    - Javascript
+    - jQuery
+    - CSS3
+    - node webkit
+ - *2015* I am a Co-Founder of [ColposcopyApp](http://www.colposcopyapp.com) a new model of Quality Control in Colposcopy Screening for improving interobserver reproducibility and diagnosis consensus, representing a tool for Continuing Medical Education and diagnostic accuracy improvement.
  - *October 2014/Present* I cover the role of CTO and Co-Founder of [MyResApp](https://www.myresapp.com) where I am responsible to maintain, design and lead the development of the platform:
      - HTML5
      - jQuery
@@ -80,6 +124,10 @@ Working experiences:
      - NodeJs (ExpressJs)
      - MySQL
      - MongoDb
+     - Amazon Route 53
+     - Amazon SES
+     - Amazon S3
+     - Amazon EC2
  - *March 2014* I developed a web application (CyanideChecker) for [Bluclad s.r.l.](http://www.bluclad.it) that is used to check and monitor quantity of Cyanide to sell:
      - HTML5
      - jQuery
@@ -93,7 +141,7 @@ Working experiences:
      - Ajax
      - Twitter Bootstrap
      - CodeIgniter PHP MVC framework
-     - MySQL 
+     - MySQL
  - *October 2013/Present* Platform Leader for [Gilbarco Veeder Root](http://www.gilbarco.com) where I lead the development of all the three outdoor payment platforms of Gilbarco Veeder Root: M3, NGP and Vanguard. I am responsible for reliability tests and strategic platform choices that involve Linux kernel, device drivers tuning, build environment setup and platform system architecture:
      - Platform leader.
      - Linux internals.
@@ -300,21 +348,21 @@ Working experiences:
 
 Computer languages:
 -------------------
- - PHP4, PHP5.x (advanced level)
+ - PHP4, PHP5.x, PHP7.x (advanced level)
+ - Python (advanced level)
  - Unix Shell (sh and bash Scripting) (advanced level)
  - (X)HTML, HTML5, CSS2, CSS3 (advanced level)
  - jQuery/Javascript (advanced level)
  - SQL, MySQL, PostgreSQL (intermediate level)
- - Python (intermediate level)
- - C/C++ (intermediate level)
+ - NoSQL: MongoDB, CouchDB (intermediate level)
  - Node js (intermediate level)
- - Visual Basic 6 (basic level)
+ - C/C++ (intermediate level)
  - Perl (basic level)
  - Java (basic level)
 
 Operative Systems:
 ------------------------
- - Gnu/Linux advanced level.
+ - Gnu/Linux advanced sysadmin level.
  - Windows advanced level.
  - *Bsd intermediate level.
 
@@ -331,7 +379,7 @@ Experiences:
  - Clients relationship.
  - Release and delivery management.
  - Revision Control Systems (SVN, Git, CVS, ClearCase).
- - Build management (Makefile, gcc, linker, patch, shell scripts, …).
+ - Build management (Makefile, Cmake, gcc, linker, patch, shell scripts, …).
  - Team working / Team building.
  - System and network administration.
  - Networking (wired, wireless, switch, router, protocols, …).

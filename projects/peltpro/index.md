@@ -38,7 +38,7 @@ Main features:
    - Leathers management
  - Operations:
    - Measure (using a Raspberry Pi as a thin client to grab data from GER Elettronica measure machine)
-   - Control (for defects count using barcodes)
+   - Control (for defects, quadrants and haunches count using barcodes)
    - Decks management
  - Accounting:
    - Delivery
