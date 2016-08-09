@@ -5,15 +5,15 @@ author: Matteo Mattei
 layout: post
 permalink: /subversion-webdav-ldap-and-folder-restrictions/
 categories:
-  - SVN
-  - LDAP
-  - Server
-  - Ubuntu
+  - svn
+  - ldap
+  - server
+  - ubuntu
 ---
 If you need to configure a svn server on Linux with *LDAP authentication*, *webdav* and insert specific directory restrictions you can follow these instructions.
 
  1. You need to install subversion and apache in your Linux server (I will omit this part).
- 2. You need to configure webdav to access svn over http and configure LDAP access. 
+ 2. You need to configure webdav to access svn over http and configure LDAP access.
 
     Make sure to have the following apache modules installed and configured:
 
@@ -24,15 +24,15 @@ If you need to configure a svn server on Linux with *LDAP authentication*, *webd
     LoadModule authz_svn_module modules/mod_authz_svn.so
     LoadModule authn_alias_module modules/mod_authn_alias.so
     ```
-        
+
     Assumptions:
-        
+
      - I am usual to configure subversion in **/srv/svn** folder.
      - The users allowed to access the SVN have to belong to the LDAP group **CN=SVN-AUTHORIZATION,OU=Groups GSO,DC=test,DC=example,DC=com**
-        
+
     Edit */etc/apache2/mods-enabled/dav_svn.conf* (this is valid for Ubuntu. Maybe in other distributions this file is placed somewhere else) and make sure to have the following lines:
-    
-    ```    
+
+    ```
     <Location /svn/>
       # Enable svn over webdav
       DAV svn
@@ -56,12 +56,12 @@ If you need to configure a svn server on Linux with *LDAP authentication*, *webd
       AuthLDAPBindPassword mypassword
       # LDAP URL
       AuthLDAPUrl "ldap://ldap_ip_address:389/DC=test,DC=example,DC=com?sAMAccountName?sub?(&(&(objectClass=user)(objectCategory=person))(memberof=CN=SVN-AUTHORIZATION,OU=Groups GSO,DC=test,DC=example,DC=com))"
-    
+
       # A valid user is required
       Require valid-user
     </Location>
     ```
- 3. Create the permission file */etc/apache2/dav_svn.authz*  
+ 3. Create the permission file */etc/apache2/dav_svn.authz*
     It will have the following content based on your needing:
 
     ```
@@ -70,7 +70,7 @@ If you need to configure a svn server on Linux with *LDAP authentication*, *webd
     group1 = user1, user2, user3
     group2 = user2
     group3 = user4
-    
+
     ###################################
     [/]
     * = r
@@ -101,14 +101,14 @@ If you need to configure a svn server on Linux with *LDAP authentication*, *webd
     ```
 
     Now restart apache with
-    
+
     ```
     /etc/init.d/apache2 restart
     ```
- 4. Create repositories. 
+ 4. Create repositories.
     As root issue the following commands:
-    
-    ```    
+
+    ```
     cd /srv/svn
     svnadmin create repository1
     chown www-data.www-data -R repository1
@@ -119,5 +119,5 @@ If you need to configure a svn server on Linux with *LDAP authentication*, *webd
     svnadmin create repository4
     chown www-data.www-data -R repository4
     ```
-    
+
 You are now ready to use your new subversion repository with LDAP account, webdav access and custom user/group directory restrictions.

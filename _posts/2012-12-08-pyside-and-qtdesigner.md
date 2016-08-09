@@ -5,10 +5,10 @@ author: Matteo Mattei
 layout: post
 permalink: /pyside-and-qtdesigner/
 categories:
-  - Python
-  - PySide
+  - python
+  - pyside
 ---
-The tool to transform *myapplication.ui* generated with qt-designer in *myapplication_ui.py*, is called **pyside-uic** (if you use **PySide**, or **pyuic** if you use **PyQt**).  
+The tool to transform *myapplication.ui* generated with qt-designer in *myapplication_ui.py*, is called **pyside-uic** (if you use **PySide**, or **pyuic** if you use **PyQt**).
 Its usage is straightforward:
 
 Linux:

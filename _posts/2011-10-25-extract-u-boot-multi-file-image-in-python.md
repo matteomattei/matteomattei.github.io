@@ -5,9 +5,9 @@ author: Matteo Mattei
 layout: post
 permalink: /extract-u-boot-multi-file-image-in-python/
 categories:
-  - Embedded
-  - Linux
-  - Python
+  - embedded
+  - linux
+  - python
 ---
 This simple piece of code shows how to extract/decompress a u-boot multi-file image created with *mkimage* using Python. The image format is very simple:
 

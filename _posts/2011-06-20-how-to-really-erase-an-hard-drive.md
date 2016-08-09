@@ -5,7 +5,7 @@ author: Matteo Mattei
 layout: post
 permalink: /how-to-really-erase-an-hard-drive/
 categories:
-  - Relax
+  - relax
   - hard disk
   - jokes
   - security

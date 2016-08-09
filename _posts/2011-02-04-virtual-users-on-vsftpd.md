@@ -5,7 +5,7 @@ author: Matteo Mattei
 layout: post
 permalink: /virtual-users-on-vsftpd/
 categories:
-  - Linux
+  - linux
   - ftp
   - virtual
   - vsftp
@@ -62,7 +62,7 @@ With this simple configuration all users have these credentials:
  - port: 21
  - Root folder: /var/www/domain1/
 
-Now the point is: how can we create multiple users for a single domain each one with a different root folder?  
+Now the point is: how can we create multiple users for a single domain each one with a different root folder?
 The answer is pretty simple, follow me!
 
 Create the folder **/var/www/users** and add the following line at the end of */etc/vsftpd.conf*

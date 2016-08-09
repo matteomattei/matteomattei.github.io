@@ -5,11 +5,11 @@ author: Matteo Mattei
 layout: post
 permalink: /how-to-resolve-the-audio-distortion-in-skype-on-ubuntu-13-04-and-previous-versions/
 categories:
-  - Audio
-  - Skype
-  - Ubuntu
+  - audio
+  - skype
+  - ubuntu
 ---
-If you have problems with Skype audio on Ubuntu (distortion, croak, noise...) the simple way to get it fixed is editing the file */etc/pulse/default.pa*, change one line and restart the system.  
+If you have problems with Skype audio on Ubuntu (distortion, croak, noise...) the simple way to get it fixed is editing the file */etc/pulse/default.pa*, change one line and restart the system.
 
 From:
 ```

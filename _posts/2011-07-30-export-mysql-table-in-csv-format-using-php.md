@@ -5,9 +5,9 @@ author: Matteo Mattei
 layout: post
 permalink: /export-mysql-table-in-csv-format-using-php/
 categories:
-  - Linux
-  - MySQL
-  - PHP
+  - linux
+  - mysql
+  - php
   - backup
   - dump
 ---

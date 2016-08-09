@@ -6,9 +6,9 @@ layout: post
 permalink: /speed-up-your-virtual-machine-created-with-vmware-player/
 keywords: "vmware, vmware-player, performance, speed-up, memory, swap"
 categories:
-  - Virtualization
-  - Tricks
-  - Vmware
+  - virtualization
+  - tricks
+  - vmware
 ---
 ![vmware logo](/public/posts_images/vmware_logo.jpg)
 

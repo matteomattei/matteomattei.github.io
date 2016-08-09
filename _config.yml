@@ -22,7 +22,7 @@ keywords:
 # Build settings
 markdown: rdiscount
 permalink: pretty
-highlighter: pygments
+highlighter: rouge
 paginate: 6
 gems: [jekyll-paginate, jekyll-gist]
 exclude: [node_modules]

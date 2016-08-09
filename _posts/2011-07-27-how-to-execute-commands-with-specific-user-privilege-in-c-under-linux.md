@@ -5,9 +5,9 @@ author: Matteo Mattei
 layout: post
 permalink: /how-to-execute-commands-with-specific-user-privilege-in-c-under-linux/
 categories:
-  - C/C++
-  - Linux
-  - Python
+  - c/c++
+  - linux
+  - python
 ---
 If you have root access but you need to run some applications/scripts with some other user credentials you can do it with
 

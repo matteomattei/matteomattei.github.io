@@ -5,10 +5,10 @@ author: Matteo Mattei
 layout: post
 permalink: /pyside-signals-and-slots-with-qthread-example/
 categories:
-  - Python
-  - PySide
-  - Qt
-  - Thread
+  - python
+  - pyside
+  - qt
+  - thread
 ---
 In these days I started studying PySide. After some days spent in reading lot of stuff, I thought that a real example could be useful for who intends to start learning PySide as well. In this example I can show you how you can implement a custom signal (MySignal) together with the usage of threads with QThread.
 
@@ -18,7 +18,7 @@ This example uses the api version 2 (introduced with PyQt 4.5) to connect signal
 
 {% gist matteomattei/a62338bac981c34f301f %}
 
-For more information you can look at: 
+For more information you can look at:
 
  - QThread documentation: <http://doc.qt.nokia.com/latest/qthread.html>
  - PySide signals and slots: <http://developer.qt.nokia.com/wiki/Signals_and_Slots_in_PySide>

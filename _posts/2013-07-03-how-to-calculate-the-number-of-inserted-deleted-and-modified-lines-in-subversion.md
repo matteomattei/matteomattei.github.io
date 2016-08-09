@@ -5,9 +5,9 @@ author: Matteo Mattei
 layout: post
 permalink: /how-to-calculate-the-number-of-inserted-deleted-and-modified-lines-in-subversion/
 categories:
-  - Bash
-  - Linux
-  - SVN
+  - bash
+  - linux
+  - svn
 ---
 If you need to calculate the number of inserted, deleted or modified lines in Subversion between two separate commits, you can use a simple script like this:
 

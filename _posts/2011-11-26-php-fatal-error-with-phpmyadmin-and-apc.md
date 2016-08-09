@@ -5,11 +5,11 @@ author: Matteo Mattei
 layout: post
 permalink: /php-fatal-error-with-phpmyadmin-and-apc/
 categories:
-  - Linux
-  - MySQL
-  - PHP
-  - APC
-  - Tricks
+  - linux
+  - mysql
+  - php
+  - apc
+  - tricks
 ---
 If you are running PhpMyAdmin and APC, it can happens that you get some errors like these:
 

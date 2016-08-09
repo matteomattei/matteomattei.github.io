@@ -5,8 +5,8 @@ author: Matteo Mattei
 layout: post
 permalink: /how-to-clone-mysql-database-schema-in-php/
 categories:
-  - MySQL
-  - PHP
+  - mysql
+  - php
 ---
 ![phpmysql](/public/posts_images/phpmysql_logo.gif)
 
