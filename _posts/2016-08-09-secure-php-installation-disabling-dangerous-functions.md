@@ -24,4 +24,4 @@ allow_url_include = Off   # no external URL access
 disable_functions = exec,passthru,shell_exec,system,proc_open,popen,curl_exec,curl_multi_exec,parse_ini_file,show_source # potential dangerous functions to disable
 ```
 
-After that, restart the web server and create a ```phpinfo()``` page to make sure the new values have been correctly set.
+After that, restart the web server and create a `phpinfo()` page to make sure the new values have been correctly set.
