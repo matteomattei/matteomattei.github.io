@@ -24,20 +24,20 @@ Download the goaccess source code, copile and install it:
 
 ```
 cd /usr/loca/src
-wget http://sourceforge.net/projects/goaccess/files/0.7.1/goaccess-0.7.1.tar.gz/download -O goaccess-0.7.1.tar.gz
-tar xzf goaccess-0.7.1.tar.gz
-cd goaccess-0.7.1
+wget http://tar.goaccess.io/goaccess-1.0.2.tar.gz
+tar xzf goaccess-1.0.2.tar.gz
+cd goaccess-1.0.2
 ./configure
 make
 make install
 ```
 
-Now run goaccess and select the format of the Apache log file from the list it proposes. In case you already know how the Apache output file is generated, you can create the *~/.goaccessrc* with the appropriate patterns for **date_format** and **log_format**. In my case I have the following:
+Now run goaccess and select the format of the Apache log file from the list it proposes. In case you already know how the Apache output file is generated, you can edit the configuration file */usr/local/etc/goaccess.conf* with the appropriate patterns for **time-format**, **date-format** and **log-format**. In my case I have the following:
 
 ```
-color_scheme 1
-date_format %d/%b/%Y
-log_format %h %^[%d:%^] "%r" %s %b
+time-format %H:%M:%S
+date-format %d/%b/%Y
+log-format %h %^[%d:%t %^] "%r" %s %b
 ```
 
 Create a *goaccess* folder inside a virtualhost document root (so that it is accessible from the web):
@@ -50,7 +50,7 @@ chown myuser.myuser /var/www/vhosts/myhost.com/public_html/goaccess
 Now edit */etc/crontab* and add a cronjob for goaccess that runs every 10 minutes:
 
 ```
-*/10 * * * *    myuser     /usr/local/bin/goaccess -p /home/myuser/.goaccessrc -d -H -M -o --real-os -f /var/log/apache2/access_log > /var/www/vhosts/myhost.com/public_html/goaccess/index.html
+*/10 * * * *    myuser    /usr/local/bin/goaccess -f /usr/local/apache/logs/access_log -a -d -o /var/www/vhosts/myhost.com/public_html/goaccess/index.html &> /dev/null 
 ```
 
 Generally is a good idea to protect the goaccess folder with a password so that nobody except you can access and see the statistics of the web server.
