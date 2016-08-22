@@ -402,7 +402,7 @@ Open Source projects and personal contributions:
 
 Publications:
 -------------
-I write articles for some Italian Linux magazines. At [this link](/publications) (not updated due to lack of time) is available the list of the publications made on Linux Pro and Linux Magazine.
+I write articles for some Italian Linux magazines. At [this link](http://www.matteomattei.com/publications) (not updated due to lack of time) is available the list of the publications made on Linux Pro and Linux Magazine.
 
 Resume summary:
 ---------------
