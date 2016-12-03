@@ -1,5 +1,5 @@
 ---
-title: Full web server setup with Debian 8 (Jessie) 
+title: Full web server setup with Debian 8 (Jessie)
 description: In this guide I show you how to setup a web server with all needed services (Apache, Varnish, PHP, MySQL, PhpMyAdmin, Postfix, Firewall, VSFTP) using Debian 8 Jessie.
 author: Matteo Mattei
 layout: post
@@ -142,7 +142,7 @@ Edit */etc/apache2/mods-enabled/mpm_prefork.conf*:
 
 ```
 <IfModule mpm_prefork_module>
-        StartServers             5       
+        StartServers             5
         MinSpareServers          5
         MaxSpareServers          10
         MaxRequestWorkers        150
@@ -372,17 +372,17 @@ touch /etc/vsftpd/passwd
 Now download all tools to manage the server locally:
 
 ```
-wget https://raw.githubusercontent.com/matteomattei/servermaintenance/master/LAMP_24/ADD_ALIAS.sh
-wget https://raw.githubusercontent.com/matteomattei/servermaintenance/master/LAMP_24/ADD_DOMAIN.sh
-wget https://raw.githubusercontent.com/matteomattei/servermaintenance/master/LAMP_24/ADD_FTP_VIRTUAL_USER.sh
-wget https://raw.githubusercontent.com/matteomattei/servermaintenance/master/LAMP_24/ALIAS_LIST.sh
-wget https://raw.githubusercontent.com/matteomattei/servermaintenance/master/LAMP_24/DEL_ALIAS.sh
-wget https://raw.githubusercontent.com/matteomattei/servermaintenance/master/LAMP_24/DEL_DOMAIN.sh
-wget https://raw.githubusercontent.com/matteomattei/servermaintenance/master/LAMP_24/DEL_FTP_VIRTUAL_USER.sh
-wget https://raw.githubusercontent.com/matteomattei/servermaintenance/master/LAMP_24/DOMAIN_LIST.sh
-wget https://raw.githubusercontent.com/matteomattei/servermaintenance/master/LAMP_24/MYSQL_CREATE.sh
-wget https://raw.githubusercontent.com/matteomattei/servermaintenance/master/LAMP_24/UPDATE_ALL_FTP_PASSWORD.sh
-wget https://raw.githubusercontent.com/matteomattei/servermaintenance/master/LAMP_24/UPDATE_FTP_PASSWORD.sh
+wget https://raw.githubusercontent.com/matteomattei/servermaintenance/master/Debian7/LAMP_24/ADD_ALIAS.sh
+wget https://raw.githubusercontent.com/matteomattei/servermaintenance/master/Debian7/LAMP_24/ADD_DOMAIN.sh
+wget https://raw.githubusercontent.com/matteomattei/servermaintenance/master/Debian7/LAMP_24/ADD_FTP_VIRTUAL_USER.sh
+wget https://raw.githubusercontent.com/matteomattei/servermaintenance/master/Debian7/LAMP_24/ALIAS_LIST.sh
+wget https://raw.githubusercontent.com/matteomattei/servermaintenance/master/Debian7/LAMP_24/DEL_ALIAS.sh
+wget https://raw.githubusercontent.com/matteomattei/servermaintenance/master/Debian7/LAMP_24/DEL_DOMAIN.sh
+wget https://raw.githubusercontent.com/matteomattei/servermaintenance/master/Debian7/LAMP_24/DEL_FTP_VIRTUAL_USER.sh
+wget https://raw.githubusercontent.com/matteomattei/servermaintenance/master/Debian7/LAMP_24/DOMAIN_LIST.sh
+wget https://raw.githubusercontent.com/matteomattei/servermaintenance/master/Debian7/LAMP_24/MYSQL_CREATE.sh
+wget https://raw.githubusercontent.com/matteomattei/servermaintenance/master/Debian7/LAMP_24/UPDATE_ALL_FTP_PASSWORD.sh
+wget https://raw.githubusercontent.com/matteomattei/servermaintenance/master/Debian7/LAMP_24/UPDATE_FTP_PASSWORD.sh
 chmod 770 *.sh
 ```
 
@@ -390,8 +390,8 @@ Download also the tools that will be used with cron:
 
 ```
 cd /root/cron_scripts
-wget https://raw.githubusercontent.com/matteomattei/servermaintenance/master/LAMP_24/cron_scripts/backup_mysql.sh
-wget https://raw.githubusercontent.com/matteomattei/servermaintenance/master/LAMP_24/cron_scripts/mysql_optimize.sh
+wget https://raw.githubusercontent.com/matteomattei/servermaintenance/master/Debian7/LAMP_24/cron_scripts/backup_mysql.sh
+wget https://raw.githubusercontent.com/matteomattei/servermaintenance/master/Debian7/LAMP_24/cron_scripts/mysql_optimize.sh
 chmod 770 *.sh
 ```
 
