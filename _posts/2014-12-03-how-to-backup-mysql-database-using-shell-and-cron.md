@@ -27,7 +27,7 @@ NOTE: given the MySQL root password is in clear is important to limit the access
 
 ```
 chown root.root mysql_backup.sh
-chmod 660 mysql_backup.sh
+chmod 770 mysql_backup.sh
 ```
 
 Then, to set a cronjob to do it automatically every day, open */etc/crontab* and add the following line at the bottom:
