@@ -580,8 +580,9 @@ a:focus {
   color: #036564;
 }
 .post > p > img {
-  width: 100%;
+  width: 35%;
   height: auto;
+  margin: auto;
 }
 .project_image img {
   width:100%;
