@@ -55,7 +55,15 @@ Login again, update the system and install all needed software:
 ```
 sudo apt-get update
 sudo apt-get dist-upgrade
-sudo apt-get install midori matchbox-window-manager x11-xserver-utils unclutter xinit
+sudo apt-get install midori matchbox-window-manager xserver-xorg x11-xserver-utils unclutter xinit
+```
+
+Now add **tty** group to **pi** user because *pi* needs to handle /dev/ttyX devices and adjust permissions accordingly
+at every system startup:
+
+```
+gpasswd -a pi tty
+echo "chmod g+rw /dev/tty?" >> /etc/rc.local
 ```
 
 Now create a startup script:
