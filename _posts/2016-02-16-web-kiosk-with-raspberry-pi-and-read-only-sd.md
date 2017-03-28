@@ -63,7 +63,7 @@ at every system startup:
 
 ```
 gpasswd -a pi tty
-echo "chmod g+rw /dev/tty?" >> /etc/rc.local
+sed -i '/^exit 0/c\chmod g+rw /dev/tty?\nexit 0' /etc/rc.local
 ```
 
 Now create a startup script:
