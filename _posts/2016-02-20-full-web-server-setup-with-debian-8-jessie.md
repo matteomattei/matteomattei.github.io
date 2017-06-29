@@ -119,7 +119,7 @@ Install PAM module for virtual users:
 apt-get install libpam-pwdfile
 ```
 
-And configure it creating a file in /etc/pam.d/
+And configure it creating the file ```/etc/pam.d/vsftpd_local_and_virtual``` with this content:
 
 ```
 # Standard behaviour for ftpd(8).
