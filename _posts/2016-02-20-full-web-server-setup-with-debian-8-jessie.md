@@ -113,6 +113,28 @@ mkdir /etc/vsftpd
 touch /etc/vsftpd/chroot_list
 ```
 
+Install PAM module for virtual users:
+
+```
+apt-get install libpam-pwdfile
+```
+
+And configure it creating a file in /etc/pam.d/
+
+```
+# Standard behaviour for ftpd(8).
+auth    required        pam_listfile.so item=user sense=deny file=/etc/ftpusers onerr=succeed
+
+# first try to authenticate local users
+auth    sufficient      pam_unix.so
+
+# if that failed, login with virtual user
+auth    required        pam_pwdfile.so  pwdfile /etc/vsftpd/passwd
+
+# pam_pwdfile doesn't come with account, so we just permit on success
+account required        pam_permit.so
+```
+
 Start VSFTP server:
 
 ```
