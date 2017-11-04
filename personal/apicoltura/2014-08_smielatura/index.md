@@ -24,7 +24,7 @@ Ringraziamenti:
 
 <div class="embed-container">
     <iframe src="https://www.flickr.com/photos/matteomattei/sets/72157646663997607/player/" frameborder="0" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
-  </div>
+</div>
 <br />
 
 Disopercolatura telaini:

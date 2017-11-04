@@ -303,6 +303,7 @@ a:focus {
 }
 .colophon-links li {
   color: inherit;
+  line-height:1.3em;
 }
 
 /* Responsive masthead */
