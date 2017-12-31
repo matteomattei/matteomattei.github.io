@@ -28,7 +28,7 @@ kramdown:
   syntax_highlighter: rouge
 permalink: pretty
 paginate: 6
-gems: [jekyll-paginate, jekyll-gist]
+plugins: [jekyll-paginate, jekyll-gist]
 exclude: [node_modules]
 gist:
   noscript: false
