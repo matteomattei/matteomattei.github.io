@@ -483,6 +483,40 @@ touch domains.txt
 cp docs/examples/config .
 ```
 
+Log rotation
+============
+In order to correctly log files you need to adjust lograte configuration for Apache:
+
+```
+cat << EOF >> /etc/logrotate.d/apache2
+/var/www/vhosts/*/logs/access*.log
+{
+    rotate 30
+    missingok
+    size 10M
+    compress
+    delaycompress
+    sharedscripts
+    postrotate
+        /etc/init.d/apache2 reload > /dev/null
+    endscript
+}
+
+/var/www/vhosts/*/logs/error*.log
+{
+    rotate 3
+    missingok
+    compress
+    delaycompress
+    size 2M
+    sharedscripts
+    postrotate
+        /etc/init.d/apache2 reload > /dev/null
+    endscript
+}
+EOF
+```
+
 Prepare environment
 ===================
 Create all needed directories and files
