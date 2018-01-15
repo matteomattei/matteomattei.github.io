@@ -186,6 +186,8 @@ a2enmod ssl
 a2enmod rewrite
 a2enmod headers
 a2enmod deflate
+a2enmod proxy
+a2enmod proxy_http
 ```
 
 Now restart Apache:
@@ -481,6 +483,34 @@ git clone https://github.com/lukas2511/dehydrated.git
 cd dehydrated
 touch domains.txt
 cp docs/examples/config .
+```
+
+Prepare Apache2 configuration for letsencrypt:
+```
+cat << EOF > /etc/apache2/conf-available/dehydrated.conf
+Alias /.well-known/acme-challenge /var/www/dehydrated
+<Directory /var/www/dehydrated>
+        Options None
+        AllowOverride None
+
+        # Apache 2.x
+        <IfModule !mod_authz_core.c>
+                Order allow,deny
+                Allow from all
+        </IfModule>
+
+        # Apache 2.4
+        <IfModule mod_authz_core.c>
+                Require all granted
+        </IfModule>
+</Directory>
+EOF
+```
+
+Enable new config and reload Apache
+```
+a2enconf dehydrated
+systemctl reload apache2
 ```
 
 Log rotation
