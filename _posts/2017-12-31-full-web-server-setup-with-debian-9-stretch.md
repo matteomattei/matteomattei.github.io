@@ -225,6 +225,10 @@ sub vcl_recv {
     # Typically you clean up the request here, removing cookies you don't need,
     # rewriting the request, etc.
 
+    if (req.url ~ "^/phpmyadmin") {
+        return (pass);
+    }
+
     if ((client.ip != "127.0.0.1" && std.port(server.ip) == 80) &&
         (
           (req.http.host ~ "localhost")
