@@ -40,7 +40,7 @@ Note: _xxx.xxx.xxx.xxx_ is the public IP address assigned to your server.
 # Install all needed packages
 
 ```
-apt install wget vim git acl screen rsync net-tools pwgen php mariadb-server mariadb-client apache2 iptables shorewall php php-cli php-curl php-dev php-gd php-imagick php-imap php-memcache php-pspell php-recode php-tidy php-xmlrpc php-pear php-fpm postfix ca-certificates bsd-mailx
+apt install wget vim git acl screen rsync net-tools pwgen php mariadb-server mariadb-client apache2 iptables shorewall php php-cli php-curl php-dev php-gd php-imagick php-imap php-memcache php-pspell php-recode php-tidy php-xmlrpc php-pear php-fpm php-mbstring php-mysql postfix ca-certificates bsd-mailx
 ```
 
 **Postfix:**
@@ -256,7 +256,7 @@ MySQL is now configured, so restart it:
 The version of phpmyadmin coming with the distribution is not updated so I prefer to install the latest manually:
 
 ```
-export VER="4.9.0.1"
+export VER="5.0.4"
 cd /tmp
 wget https://files.phpmyadmin.net/phpMyAdmin/${VER}/phpMyAdmin-${VER}-all-languages.tar.gz
 tar xvf phpMyAdmin-${VER}-all-languages.tar.gz
@@ -271,7 +271,7 @@ cp /usr/share/phpmyadmin/config.sample.inc.php  /usr/share/phpmyadmin/config.inc
 Now edit the file `/usr/share/phpmyadmin/config.inc.php` and set secret passphrase and temporary directory:
 
 ```
-// http://www.passwordtool.hu/blowfish-password-hash-generator
+// https://www.devglan.com/online-tools/bcrypt-hash-generator
 $cfg['blowfish_secret'] = 'SECRET_HERE';
 [...]
 $cfg['TempDir'] = '/var/lib/phpmyadmin/tmp';
@@ -352,6 +352,7 @@ git clone https://github.com/lukas2511/dehydrated.git
 cd dehydrated
 touch domains.txt
 cp docs/examples/config .
+/root/dehydrated/dehydrated --register --accept-terms
 ```
 
 Prepare Apache2 configuration for letsencrypt:
@@ -446,8 +447,8 @@ Download also the tools that will be used with cron:
 
 ```
 cd /root/cron_scripts
-wget https://raw.githubusercontent.com/matteomattei/servermaintenance/master/Debian9/LAMP/cron_scripts/backup_mysql.sh
-wget https://raw.githubusercontent.com/matteomattei/servermaintenance/master/Debian9/LAMP/cron_scripts/mysql_optimize.sh
+wget https://raw.githubusercontent.com/matteomattei/servermaintenance/master/Debian10/LAMP/cron_scripts/backup_mysql.sh
+wget https://raw.githubusercontent.com/matteomattei/servermaintenance/master/Debian10/LAMP/cron_scripts/mysql_optimize.sh
 chmod 770 *.sh
 ```
 
