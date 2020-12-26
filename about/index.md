@@ -388,6 +388,8 @@ sitemap:
 - DevOps.
 - Release and delivery management.
 - Revision Control Systems (SVN, Git, CVS, ClearCase).
+- SQL/NoSQL datatabase.
+- E-mail stack: postfix, dovecot, spamassassin, clamav, iredapd, qmail, etc...
 - Build management (Makefile, Cmake, gcc, linker, patch, shell scripts, …).
 - System and network administration.
 - Networking (wired, wireless, switch, router, protocols, …).
