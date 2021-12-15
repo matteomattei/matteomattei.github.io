@@ -20,7 +20,7 @@ sitemap:
 - _Citizenship_ Italian.
 - _Working e-mail_ [info@matteomattei.com](mailto:info@matteomattei.com)
 - _Personal e-mail_ [matteo.mattei@gmail.com](mailto:matteo.mattei@gmail.com)
-- _Certified e-mail_ [matteo.mattei@ingpec.eu](mailto:matteo.mattei@ingpec.eu)
+- _Certified e-mail_ [matteo.mattei@pec.it](mailto:matteo.mattei@pec.it)
 - _Website_ [matteomattei.com](http://www.matteomattei.com)
 - _LinkedIn_ [matteomattei](http://it.linkedin.com/in/matteomattei)
 - _Google+_ [+MatteoMattei](https://plus.google.com/+MatteoMattei)
@@ -37,7 +37,6 @@ sitemap:
 
 ## Subscriptions and Certifications:
 
-- [Ordine degli ingegneri della provincia di Firenze](http://www.ordineingegneri.fi.it/).
 - [ISIPM-Base](http://www.isipm.org/certificazione-isipm/lista-certificati/article/4110-mattei) certification (Italian Institute of Project Management).
 
 ## Independent coursework:
@@ -79,7 +78,7 @@ sitemap:
   - mysql
   - queues
 - _December 2019/Present_ IT consultant at [Luxury Brands Control](https://www.luxurybrandscontrol.com).
-- _February 2017/Present_ DevOps and Project Manager. I am part of the great [Qboxmail s.r.l.](https://www.qboxmail.com) team. Beyond the supervision and planning of the qboxmail projects as Project Manager, I also have hands on the development and system administration.
+- _February 2017/Present_ DevOps and Project Manager. I am part of the great [Qboxmail s.r.l.](https://www.qboxmail.com) team. Beyond the supervision and planning of the qboxmail projects, I also have hands on the development, devops and system administration.
 - _October 2016/Present_ CTO for [Agronit group s.r.l.](https://www.agronit.net) where I lead the technological part of the company using the latest technologies to prepare the next generation agritech platform.
 - _2015/Present_ Co-Founder of [Chip2Bit](http://www.chip2bit.com).
 - _2015/Present_ Co-Founder of [Rooma](https://www.rooma.it) a SaaS platform to help B&B, hostels, little hotel, motel, etc... to manage reservations.
@@ -388,7 +387,7 @@ sitemap:
 - DevOps.
 - Release and delivery management.
 - Revision Control Systems (SVN, Git, CVS, ClearCase).
-- SQL/NoSQL datatabase.
+- SQL/NoSQL datatabase (MySQL, MongoDB, Redis, Sqlite).
 - E-mail stack: postfix, dovecot, spamassassin, clamav, iredapd, qmail, etc...
 - Build management (Makefile, Cmake, gcc, linker, patch, shell scripts, …).
 - System and network administration.
