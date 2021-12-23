@@ -1,9 +1,9 @@
 ---
-title: Convert old NodeJs applications to ES6 module
-description: A very quick guide on how to convert old Nodejs applications to ES6 module
+title: Convert old NodeJs applications to ES6 modules
+description: A very quick guide on how to convert old Nodejs applications to ES6 modules
 author: Matteo Mattei
 layout: post
-permalink: /convert-old-nodejs-application-to-es6-module/
+permalink: /convert-old-nodejs-application-to-es6-modules/
 img_url:
 categories:
   - nodejs
