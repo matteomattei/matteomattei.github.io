@@ -3,7 +3,7 @@ title: Matteo Mattei
 author: Matteo Mattei
 layout: page
 sitemap:
-  lastmod: 2020-12-06
+  lastmod: 2022-02-09
   priority: 0.7
   changefreq: monthly
 ---
@@ -27,6 +27,7 @@ sitemap:
 - _Facebook_ [matte0matte1](https://www.facebook.com/matte0matte1)
 - _Twitter_ [matteomattei](https://github.com/matteomattei)
 - _Github_ [matteomattei](https://github.com/matteomattei)
+- _Npm_ [matteomattei](https://www.npmjs.com/~matteomattei)
 - _Telephone number_ +39 340 8846263
 
 ## Languages:
@@ -76,12 +77,50 @@ sitemap:
   - php
   - redis
   - mysql
-  - queues
+  - bull queues
+  - mongodb
+  - load balancing
+  - fare rule engine
+  - payment batch processing
+  - retail/transit EMV payments
+  - ISO 8859
+  - PSP gateway interfaces
+  - TLS mutual authentication
 - _December 2019/Present_ IT consultant at [Luxury Brands Control](https://www.luxurybrandscontrol.com).
-- _February 2017/Present_ DevOps and Project Manager. I am part of the great [Qboxmail s.r.l.](https://www.qboxmail.com) team. Beyond the supervision and planning of the qboxmail projects, I also have hands on the development, devops and system administration.
-- _October 2016/Present_ CTO for [Agronit group s.r.l.](https://www.agronit.net) where I lead the technological part of the company using the latest technologies to prepare the next generation agritech platform.
+- _February 2017/Present_ DevOps and Project Manager. I am part of the great [Qboxmail s.r.l.](https://www.qboxmail.com) team. Beyond the supervision and planning of the qboxmail projects, I also have hands on the development, devops and system administration. We manage hundred servers used every day by hundred thousands people around the world.
+  - Dovecot
+  - Full text search (solr, flatcurve)
+  - Antispam
+  - Antivirus
+  - Sieve filters
+  - Postfix
+  - Zone-mta
+  - Nodejs
+  - Ruby
+  - PHP
+  - Reactjs
+  - Flask
+  - Python
+  - Bash
+  - Application deployment
+  - Complex server infrastructures
+  - Backup management
+  - Redis
+  - Mongodb
+  - MySQL
+  - Docker
+  - Keepalived
+  - Whmcs
+  - Proxmox
+  - RedHat Enterprise Virtualization (ovirt)
+  - Munin
+  - protocols (POP, IMAP, SMTP, SIEVE, SASL, CALDAV, CARDAV)
+  - REST Api
+  - Websocket
+  - SSL certificates
+- _October 2016/November 2022_ CTO for [Agronit group s.r.l.](https://www.agronit.net) where I lead the technological part of the company using the latest technologies to prepare the next generation agritech platform.
 - _2015/Present_ Co-Founder of [Chip2Bit](http://www.chip2bit.com).
-- _2015/Present_ Co-Founder of [Rooma](https://www.rooma.it) a SaaS platform to help B&B, hostels, little hotel, motel, etc... to manage reservations.
+- _2015/2018_ Co-Founder of [Rooma](https://www.rooma.it) a SaaS platform to help B&B, hostels, little hotel, motel, etc... to manage reservations.
   - NodeJS (expressjs)
   - CouchDB (live sync through multiple devices)
   - PHP
@@ -150,7 +189,7 @@ sitemap:
   - Twitter Bootstrap
   - CodeIgniter PHP MVC framework
   - MySQL
-- _October 2013/Present_ Platform Leader for [Gilbarco Veeder Root](http://www.gilbarco.com) where I lead the development of all the three outdoor payment platforms of Gilbarco Veeder Root: M3, NGP and Vanguard. I am responsible for reliability tests and strategic platform choices that involve Linux kernel, device drivers tuning, build environment setup and platform system architecture:
+- _October 2013/February 2017_ Platform Leader for [Gilbarco Veeder Root](http://www.gilbarco.com) where I lead the development of all the three outdoor payment platforms of Gilbarco Veeder Root: M3, NGP and Vanguard. I am responsible for reliability tests and strategic platform choices that involve Linux kernel, device drivers tuning, build environment setup and platform system architecture:
   - Platform leader.
   - Linux internals.
   - Device drivers.
@@ -356,29 +395,32 @@ sitemap:
 
 ## Computer languages:
 
-- PHP4, PHP5.x, PHP7.x (advanced level)
 - Nodejs (advanced level)
+- PHP4, PHP5.x, PHP7.x (advanced level)
 - Python (advanced level)
 - Unix Shell (sh and bash Scripting) (advanced level)
 - (X)HTML, HTML5, CSS2, CSS3 (advanced level)
 - jQuery/Javascript (advanced level)
 - SQL, MySQL, PostgreSQL (intermediate level)
 - NoSQL: MongoDB, CouchDB, Redis (intermediate level)
-- C/C++ (intermediate level)
+- C/C++ (basic/intermediate level)
 - Perl (basic level)
 - Java (basic level)
 
-## Operative Systems:
+## Operative Systems and platforms:
 
 - Gnu/Linux advanced sysadmin level.
 - Windows advanced level.
-- \*Bsd intermediate level.
+- Raspberry Pi advanced level.
+- Arduino intermediate level.
+- Unix/\*Bsd intermediate level.
 
 ## Working methodologies:
 
-- SCRUM
+- Scrum
 - Agile
 - XP (eXtreme Programming)
+- On-Site / Full-Remote
 
 ## Experiences:
 
@@ -398,13 +440,14 @@ sitemap:
 
 ## Open Source projects and personal contributions:
 
-- Public projects ara available at my [GitHub page](https://github.com/matteomattei).
+- Public projects are available at my [GitHub page](https://github.com/matteomattei).
+- Public Nodejs libraries are available at [NPM repository](https://www.npmjs.com/~matteomattei).
 - I developed a new functionality in [CodeIgniter](http://www.codeigniter.com) PHP framework to send email attachment using string buffer and mime-type instead of physical files.
 - I cooperate in the development of [PyUbootImage](http://pypi.python.org/pypi/PyUbootImage), a Python library to read and parse u-boot multi-image files.
 - I cooperate in the development of [PyRomfsImage](http://pypi.python.org/pypi/PyRomfsImage) a Python library to read and parse ROMfs files.
 - I developed a patch for [rootstock project](https://launchpad.net/project-rootstock) to make available a better compression with bzip2 and a comment filter on manifest file.
 - I was the initial author of [wizbackup](http://codewiz.org/gitweb/wizbackup.git), a script to automatize incremental backups using ssh and rsync. This project is currently used to backup the server farm of the [Free Software Foundation](http://www.fsf.org/).
-- Coordinator of [spaghettilinux.org](http://www.spaghettilinux.org).
+- Coordinator of [spaghettilinux.org](http://www.spaghettilinux.org) - closed for the moment.
 - Founder and developer of [QLFS](http://qlfs.spaghettilinux.org).
 - Member of [LFS-Italia](http://lfs-italia.spaghettilinux.org).
 - Author of QLFS-LIVE
@@ -417,7 +460,7 @@ I write articles for some Italian Linux magazines. At [this link](http://www.mat
 
 ## Resume summary:
 
-I believe in Open Source software and Linux. I currently work as platform lead for a US multinational company, leader in fuel dispensers and outdoor payment systems. I also work as a freelance computer engineer for various companies as Linux system administrator and web developer.
+I believe in Open Source software and Linux. I currently work as project manager and devops for an email hosting company. I also work as a freelance computer engineer for various organizations as Linux system administrator, cloud architect and web developer.
 
 I am always ready to learn new technologies and improve my skills. I've not problem to move outside my country and I am willing to relocate wherever there is a good opportunity of professional growth.
 
