@@ -1,4 +1,4 @@
-# Matteo Mattei
+<h1 style="text-align:center; margin:auto">Matteo Mattei</h1>
 
 ## Personal informations:
 
