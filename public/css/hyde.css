@@ -19,7 +19,6 @@ Learn more at http://andhyde.com or https://github.com/mdo/hyde.
 
 */
 
-
 /*
  * Contents
  *
@@ -34,7 +33,6 @@ Learn more at http://andhyde.com or https://github.com/mdo/hyde.
  * Themes
  */
 
-
 /*
  * Body resets
  *
@@ -43,16 +41,16 @@ Learn more at http://andhyde.com or https://github.com/mdo/hyde.
 
 * {
   -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
-  max-width:100%;
-  overflow-x:hidden;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -68,7 +66,12 @@ body {
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0 0 10px;
   font-weight: 600;
   line-height: 1.25;
@@ -85,7 +88,9 @@ h3 {
   margin-top: 24px;
   font-size: 24px;
 }
-h4, h5, h6 {
+h4,
+h5,
+h6 {
   margin-top: 16px;
   font-size: 16px;
 }
@@ -94,7 +99,8 @@ p {
   margin: 0 0 15px;
 }
 
-ul, ol {
+ul,
+ol {
   margin-bottom: 15px;
 }
 
@@ -127,7 +133,7 @@ pre {
   font-family: Menlo, Monaco, "Courier New", monospace;
 }
 code {
-  padding: .25em .5em;
+  padding: 0.25em 0.5em;
   font-size: 85%;
   color: #bf616a;
   background-color: #f9f9f9;
@@ -171,10 +177,10 @@ blockquote p {
   text-indent: -0.4em;
 }
 blockquote p:before {
-  content: '\201C';
+  content: "\201C";
 }
 blockquote p:after {
-  content: '\201D';
+  content: "\201D";
 }
 
 img {
@@ -185,25 +191,25 @@ img {
 .img-icon {
   display: inline;
   margin: 4px 6px 4px 4px;
-  width:16px; /* you can use % */
+  width: 16px; /* you can use % */
   height: auto;
-  vertical-align:text-bottom;
+  vertical-align: text-bottom;
 }
 
 .img-feed {
   display: inline;
   margin: 5px;
-  opacity:0.4;
-  filter:alpha(opacity=40); /* For IE8 and earlier */
-  width:32px; /* you can use % */
+  opacity: 0.4;
+  filter: alpha(opacity=40); /* For IE8 and earlier */
+  width: 32px; /* you can use % */
   height: auto;
-  vertical-align:text-bottom;
+  vertical-align: text-bottom;
 }
 
 .img-openpaper {
   display: inline;
   margin: 0px 5px 0px 0px;
-  width:32px; /* you can use % */
+  width: 32px; /* you can use % */
   height: auto;
   vertical-align: middle;
 }
@@ -211,7 +217,7 @@ img {
 .img-lrgicon {
   display: inline;
   margin: 0px 5px 0px 0px;
-  width:40px; /* you can use % */
+  width: 40px; /* you can use % */
   height: auto;
   vertical-align: middle;
   float: left;
@@ -220,7 +226,7 @@ img {
 .img-port {
   display: inline;
   margin: 0px 20px 0px 0px;
-  width:150px; /* you can use % */
+  width: 150px; /* you can use % */
   height: auto;
   float: left;
 }
@@ -235,7 +241,6 @@ img {
   font-size: 1em;
   font-weight: 300;
 }
-
 
 /*
  * Links
@@ -253,7 +258,6 @@ a:hover,
 a:focus {
   text-decoration: underline;
 }
-
 
 /*
  * Masthead
@@ -289,13 +293,13 @@ a:focus {
   color: #fff;
 }
 .masthead p.copyright {
-  font-size:0.8em;
+  font-size: 0.8em;
 }
 
 /* Footer area of masthead */
 .colophon {
   margin-top: 15px;
-  color: rgba(255,255,255,.5);
+  color: rgba(255, 255, 255, 0.5);
 }
 .colophon-links {
   padding-left: 0;
@@ -303,7 +307,7 @@ a:focus {
 }
 .colophon-links li {
   color: inherit;
-  line-height:1.3em;
+  line-height: 1.3em;
 }
 
 /* Responsive masthead */
@@ -319,7 +323,7 @@ a:focus {
     top: 0;
     left: 0;
     bottom: 0;
-    width:330px;
+    width: 330px;
     margin-bottom: 0;
   }
   .masthead-inner {
@@ -335,20 +339,20 @@ a:focus {
     margin-top: 10px;
   }
 }
-@media (min-width:990px) and (max-width: 1366px){
+@media (min-width: 990px) and (max-width: 1366px) {
   .masthead-inner p.lead {
-    font-size:0.9em;
+    font-size: 0.9em;
   }
   .colophon {
-    font-size:0.9em;
+    font-size: 0.9em;
   }
 }
-@media (min-width:1024px) and (max-width: 1024px){
+@media (min-width: 1024px) and (max-width: 1024px) {
   .masthead-inner p.lead {
-    font-size:0.8em;
+    font-size: 0.8em;
   }
   .colophon {
-    font-size:0.9em;
+    font-size: 0.9em;
   }
 }
 
@@ -362,7 +366,6 @@ a:focus {
     margin-right: 50px;
   }
 }
-
 
 /*
  * Posts
@@ -412,7 +415,6 @@ a:focus {
   color: inherit;
 }
 
-
 /*
  * Pagination
  *
@@ -451,7 +453,6 @@ a:focus {
   background-color: #f5f5f5;
 }
 
-
 /*
  * Reverse layout
  *
@@ -469,18 +470,16 @@ a:focus {
   }
 }
 
-.img-circular{
- width: 80px;
- height: 80px;
- background-image: url('/public/site_images/matteo_5.jpg');
- background-size: cover;
- display: block;
- border-radius: 40px;
- -webkit-border-radius: 40px;
- -moz-border-radius: 40px;
+.img-circular {
+  width: 80px;
+  height: 80px;
+  background-image: url("/public/site_images/matteo_5.jpg");
+  background-size: cover;
+  display: block;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
 }
-
-
 
 /*
  * Themes
@@ -586,7 +585,7 @@ a:focus {
   margin: auto;
 }
 .project_image img {
-  width:100%;
+  width: 100%;
 }
 .post_img {
   width: 100%;
@@ -604,7 +603,8 @@ a:focus {
 /* projects */
 .dirindex .pages ul {
   overflow: auto;
-  margin: 0; padding: 0;
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 .dirindex .pages ul li {
@@ -616,10 +616,10 @@ a:focus {
   filter: alpha(opacity=40); /* For IE8 and earlier */
   display: block;
   color: white;
-  border-radius:15px;
+  border-radius: 15px;
   height: 180px;
-  width:90%;
-  margin:auto;
+  width: 90%;
+  margin: auto;
 }
 .dirindex .pages ul li a:hover {
   opacity: 1;
@@ -628,89 +628,118 @@ a:focus {
   height: 180px;
 }
 .page-image {
-  float:left;
-  width:30%;
+  float: left;
+  width: 30%;
   white-space: nowrap;
   text-align: center;
   background-color: #7bafba;
   border-radius: 15px 0 0 15px;
-  height:100%;
-  position:relative;
+  height: 100%;
+  position: relative;
 }
 .page-text {
-  float:left;
+  float: left;
   padding: 0 15px 15px 15px;
   width: 70%;
-  height:100%;
+  height: 100%;
 }
 .page-image .helper {
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
 }
 .page-image img {
-  width:90%;
+  width: 90%;
   max-height: 160px;
   vertical-align: middle;
   margin: auto;
-  position:absolute;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
-@media (min-width: 990px) and (max-width:1200px) {
-  .page-text h3{
-    font-size:1em;
+@media (min-width: 990px) and (max-width: 1200px) {
+  .page-text h3 {
+    font-size: 1em;
   }
-  .page-text p{
-    font-size:0.9em;
+  .page-text p {
+    font-size: 0.9em;
   }
 }
 @media (max-width: 768px) {
-  .page-text h3{
-    font-size:0.9em;
+  .page-text h3 {
+    font-size: 0.9em;
   }
-  .page-text p{
-    font-size:0.7em;
+  .page-text p {
+    font-size: 0.7em;
   }
 }
 
 /* fonts */
 @font-face {
-  font-family: 'Abril Fatface';
+  font-family: "Abril Fatface";
   font-style: normal;
   font-weight: 400;
-  src: local('Abril Fatface'), local('AbrilFatface-Regular'), url(http://themes.googleusercontent.com/static/fonts/abrilfatface/v6/X1g_KwGeBV3ajZIXQ9VnDvn8qdNnd5eCmWXua5W-n7c.woff) format('woff');
+  src: local("Abril Fatface"), local("AbrilFatface-Regular"),
+    url(https://themes.googleusercontent.com/static/fonts/abrilfatface/v6/X1g_KwGeBV3ajZIXQ9VnDvn8qdNnd5eCmWXua5W-n7c.woff)
+      format("woff");
 }
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 300;
-  src: local('Open Sans Light'), local('OpenSans-Light'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+  src: local("Open Sans Light"), local("OpenSans-Light"),
+    url(https://themes.googleusercontent.com/static/fonts/opensans/v8/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff)
+      format("woff");
 }
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+  src: local("Open Sans"), local("OpenSans"),
+    url(https://themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff)
+      format("woff");
 }
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
-  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+  src: local("Open Sans Semibold"), local("OpenSans-Semibold"),
+    url(https://themes.googleusercontent.com/static/fonts/opensans/v8/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff)
+      format("woff");
 }
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
-  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+  src: local("Open Sans Bold"), local("OpenSans-Bold"),
+    url(https://themes.googleusercontent.com/static/fonts/opensans/v8/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff)
+      format("woff");
 }
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: italic;
   font-weight: 400;
-  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/xjAJXh38I15wypJXxuGMBobN6UDyHWBl620a-IRfuBk.woff) format('woff');
+  src: local("Open Sans Italic"), local("OpenSans-Italic"),
+    url(https://themes.googleusercontent.com/static/fonts/opensans/v8/xjAJXh38I15wypJXxuGMBobN6UDyHWBl620a-IRfuBk.woff)
+      format("woff");
 }
-.embed-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
