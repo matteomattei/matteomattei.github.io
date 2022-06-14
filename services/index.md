@@ -3,11 +3,11 @@ title: Services
 author: Matteo Mattei
 layout: page
 sitemap:
-  lastmod: 2014-06-06
+  lastmod: 2022-06-14
   priority: 0.7
   changefreq: monthly
 ---
-*Since several years I deal with software developement and system administration. I worked for public, private, little, medium and big companies. Currently I work as platform lead for [Gilbarco](http://www.gilbarco.com) and I collaborate with [Chip2Bit](http://www.chip2bit.com) web agency for Linux system administration and web-based application development. In particular I deal with:*
+*Since several years I deal with software developement and system administration. I worked for public, private, little, medium and big companies. In particular I deal with:*
 
  - **Customized web applications**
     - I develop customized web applications, to satisfy every specific customer needing.
