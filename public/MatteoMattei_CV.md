@@ -59,22 +59,23 @@
 
 ## Working experiences:
 
-- _April 2019/Present_ Full Stack consultant at [AEP Ticketing Solutions s.r.l](https://aep-italia.it/) where I work in a team responsible to handle ticket payments for EMV cards and process them against several PSP (payment service providers).
+- _April 2019/Present_ Full Stack consultant at [AEP Ticketing Solutions s.r.l](https://aep-italia.it/) where I work in a team responsible to handle ticket payments for EMV cards and process them against several PSP (payment service providers). We also handle terminal management and cloud infrastructure (SaaS).
   - nodejs
   - php
   - redis
   - mysql
   - bull queues
   - mongodb
+  - microservices
   - load balancing
   - fare rule engine
   - payment batch processing
   - retail/transit EMV payments
   - ISO 8859
   - PSP gateway interfaces
-  - TLS mutual authentication
-- _December 2019/Present_ IT consultant at [Luxury Brands Control](https://www.luxurybrandscontrol.com).
-- _February 2017/Present_ DevOps and Project Manager. I am part of the great [Qboxmail s.r.l.](https://www.qboxmail.com) team. Beyond the supervision and planning of the qboxmail projects, I also have hands on the development, devops and system administration. We manage hundred servers used every day by hundred thousands people around the world.
+  - SSL/TLS mutual authentication
+- _December 2019/Present_ IT consultant at [Luxury Brands Control](https://www.luxurybrandscontrol.com) where I was responsible to implement new features of the ERP I developed in the past year. Moreover I am also responsible to install and manage the production server.
+- _February 2017/Present_ Developer, DevOps and Project Manager. I am part of the great [Qboxmail s.r.l.](https://www.qboxmail.com) team. Beyond the supervision and planning of the Qboxmail projects, I also have hands on the development, devops and system administration. We manage hundred servers used every day by hundred thousands people around the world.
   - Dovecot
   - Full text search (solr, flatcurve)
   - Antispam
@@ -393,10 +394,11 @@
 - C/C++ (basic/intermediate level)
 - Perl (basic level)
 - Java (basic level)
+- Ruby (basic level)
 
 ## Operative Systems and platforms:
 
-- Gnu/Linux advanced sysadmin level.
+- Gnu/Linux advanced (sysadmin level).
 - Windows advanced level.
 - Raspberry Pi advanced level.
 - Arduino intermediate level.
@@ -418,9 +420,10 @@
 - Revision Control Systems (SVN, Git, CVS, ClearCase).
 - SQL/NoSQL datatabase (MySQL, MongoDB, Redis, Sqlite).
 - E-mail stack: postfix, dovecot, spamassassin, clamav, iredapd, qmail, etc...
-- Build management (Makefile, Cmake, gcc, linker, patch, shell scripts, …).
+- Build management (Makefile, Cmake, gcc, linker, patch, shell scripts, ...).
+- Javascript toolkit (npm, yarn, webpack).
 - System and network administration.
-- Networking (wired, wireless, switch, router, protocols, …).
+- Networking (wired, wireless, switch, router, protocols, ...).
 - Software development.
 - Team working / Team building.
 - Clients relationship.
@@ -429,6 +432,7 @@
 
 - Public projects are available at my [GitHub page](https://github.com/matteomattei).
 - Public Nodejs libraries are available at [NPM repository](https://www.npmjs.com/~matteomattei).
+- I developed some patches for [zone-mta](https://github.com/zone-eu/zone-mta).
 - I developed a new functionality in [CodeIgniter](http://www.codeigniter.com) PHP framework to send email attachment using string buffer and mime-type instead of physical files.
 - I cooperate in the development of [PyUbootImage](http://pypi.python.org/pypi/PyUbootImage), a Python library to read and parse u-boot multi-image files.
 - I cooperate in the development of [PyRomfsImage](http://pypi.python.org/pypi/PyRomfsImage) a Python library to read and parse ROMfs files.
@@ -443,12 +447,12 @@
 
 ## Publications:
 
-I write articles for some Italian Linux magazines. At [this link](http://www.matteomattei.com/publications) (not updated due to lack of time) is available the list of the publications made on Linux Pro and Linux Magazine.
+In the years I wrote several articles for some Italian Linux magazines. At [this link](http://www.matteomattei.com/publications) (not updated due to lack of time) is available the list of the publications made on Linux Pro and Linux Magazine.
 
 ## Resume summary:
 
 I believe in Open Source software and Linux. I currently work as project manager and devops for an email hosting company. I also work as a freelance computer engineer for various organizations as Linux system administrator, cloud architect and web developer.
 
-I am always ready to learn new technologies and improve my skills. I've not problem to move outside my country and I am willing to relocate wherever there is a good opportunity of professional growth.
+I worked for startups, small, medium and big organizations and often also on more different projects simultaneously.
 
-I am used to work in small, medium and big companies and I have no problem working under pressure in mission critical projects.
+I am always ready to learn new technologies and improve my skills. I am always open to new challenges and wherever there is a good opportunity of professional growth.
