@@ -35,6 +35,24 @@ openssl rsa -noout -modulus -in key.pem | openssl md5
 openssl x509 -in certificate.pem -noout -text
 ```
 
+- Check a CSR:
+
+```
+openssl req -text -noout -verify -in csr.pem
+```
+
+- Check a private key:
+
+```
+openssl rsa -in key.pem -check
+```
+
+- Check a PKCS12:
+
+```
+openssl pkcs12 -info -in key.p12
+```
+
 - Generate key and certificate (CA)
 
 ```
@@ -64,3 +82,6 @@ openssl x509 -req -days 365 -in csr.pem -CA ca-cert.pem -CAkey ca-key.pem -CAcre
 ```
 openssl pkcs7 -inform der -in certificate.p7c -print_certs -out certificate.pem
 ```
+
+
+- 
