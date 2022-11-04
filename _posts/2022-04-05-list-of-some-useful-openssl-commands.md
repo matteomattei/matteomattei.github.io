@@ -83,5 +83,12 @@ openssl x509 -req -days 365 -in csr.pem -CA ca-cert.pem -CAkey ca-key.pem -CAcre
 openssl pkcs7 -inform der -in certificate.p7c -print_certs -out certificate.pem
 ```
 
+- Convert pfx file to pem (certificate + private key):
 
-- 
+```
+openssl pkcs12 -in file.pfx -nocerts -out privkey.pem
+openssl pkcs12 -in file.pfx -clcerts -nokeys -out cert.pem
+
+// remove password from the private key
+openssl rsa -in privkey.pem -out key.pem
+```
