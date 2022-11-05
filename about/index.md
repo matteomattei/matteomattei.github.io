@@ -72,6 +72,18 @@ sitemap:
 
 ## Working experiences:
 
+- _September 2022/Present_ Principal Engineer at [Elemental Machines Inc.](https://elementalmachines.com) where I work as team lead for the DIE (Data Ingestion Engine) project which aims to collect data from any lab equipment and store it in the cloud.
+  - nodejs
+  - typescript
+  - AWS
+  - Redis / MemoryDb
+  - RabbitMQ
+  - PostgreSQL
+  - Mongodb / DocumentDb
+  - Cdk
+  - ECS / ECR
+  - Api Gateway
+  - software architecture
 - _April 2019/Present_ Full Stack consultant at [AEP Ticketing Solutions s.r.l](https://aep-italia.it/) where I work in a team responsible to handle ticket payments for EMV cards and process them against several PSP (payment service providers). We also handle terminal management and cloud infrastructure (SaaS).
   - nodejs
   - php
@@ -88,7 +100,7 @@ sitemap:
   - PSP gateway interfaces
   - SSL/TLS mutual authentication
 - _December 2019/Present_ IT consultant at [Luxury Brands Control](https://www.luxurybrandscontrol.com) where I was responsible to implement new features of the ERP I developed in the past year. Moreover I am also responsible to install and manage the production server.
-- _February 2017/Present_ Developer, DevOps and Project Manager. I am part of the great [Qboxmail s.r.l.](https://www.qboxmail.com) team. Beyond the supervision and planning of the Qboxmail projects, I also have hands on the development, devops and system administration. We manage hundred servers used every day by hundred thousands people around the world.
+- _February 2017/September 2022_ Developer, DevOps and Project Manager. I am part of the great [Qboxmail s.r.l.](https://www.qboxmail.com) team. Beyond the supervision and planning of the Qboxmail projects, I also have hands on the development, devops and system administration. We manage hundred servers used every day by hundred thousands people around the world.
   - Dovecot
   - Full text search (solr, flatcurve)
   - Antispam
