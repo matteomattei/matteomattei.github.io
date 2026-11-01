@@ -4,10 +4,10 @@ layout: compress
 
 <!DOCTYPE html>
 <html
-  xmlns="https://www.w3.org/1999/xhtml"
+  xmlns="http://www.w3.org/1999/xhtml"
   xml:lang="en"
   lang="en"
-  prefix="og: https://ogp.me/ns#"
+  prefix="og: http://ogp.me/ns#"
 >
   {% include head.html %}
   <body class="theme-base-matteo">
@@ -66,12 +66,6 @@ layout: compress
               src="/public/site_images/iconmonstr-twitter-3-icon.svg"
               alt="twitter"
           /></a>
-          <a href="https://plus.google.com/+MatteoMattei"
-            ><img
-              class="img-feed"
-              src="/public/site_images/iconmonstr-google-plus-3-icon.svg"
-              alt="google+"
-          /></a>
           <a href="https://github.com/matteomattei"
             ><img
               class="img-feed"
@@ -97,59 +91,27 @@ layout: compress
 
     <script
       type="text/javascript"
-      src="https://code.jquery.com/jquery-latest.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://yandex.st/highlightjs/8.0/highlight.min.js"
+      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"
     ></script>
     <script type="text/javascript">
-      $(document).ready(function () {
+      document.addEventListener("DOMContentLoaded", function () {
         /* css above the fold */
-        $("head link[rel='stylesheet']")
-          .last()
-          .after(
-            '<link rel="stylesheet" href="https://yandex.st/highlightjs/8.0/styles/default.min.css" />'
-          );
+        var css = document.createElement("link");
+        css.rel = "stylesheet";
+        css.href =
+          "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css";
+        document.head.appendChild(css);
 
         /* initialize sintax highlight */
-        hljs.initHighlightingOnLoad();
+        hljs.highlightAll();
 
         /* disqus */
         var s = document.createElement("script");
         s.async = true;
         s.type = "text/javascript";
         s.src = "https://" + disqus_shortname + ".disqus.com/count.js";
-        (
-          document.getElementsByTagName("HEAD")[0] ||
-          document.getElementsByTagName("BODY")[0]
-        ).appendChild(s);
+        document.head.appendChild(s);
       });
-    </script>
-    <script type="text/javascript">
-      /* google analytics */
-      (function (i, s, o, g, r, a, m) {
-        i["GoogleAnalyticsObject"] = r;
-        (i[r] =
-          i[r] ||
-          function () {
-            (i[r].q = i[r].q || []).push(arguments);
-          }),
-          (i[r].l = 1 * new Date());
-        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m);
-      })(
-        window,
-        document,
-        "script",
-        "//www.google-analytics.com/analytics.js",
-        "ga"
-      );
-      ga("create", "UA-4224979-1", "auto");
-      ga("require", "displayfeatures");
-      ga("send", "pageview");
     </script>
   </body>
 </html>
